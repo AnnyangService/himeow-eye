@@ -97,6 +97,6 @@ if __name__ == "__main__":
     # GPU 설정 및 모델 로드
     encoder = TestSamEncoder(gpu_id=3)
     
-    outputs = encoder.process_image("/home/minelab/바탕화면/ANN/himeow/assets/encoder_test/origin1.jpg")
+    outputs = encoder.process_image("/home/minelab/바탕화면/ANN/himeow/assets/encoder_test_dataset/origin1.jpg")
     print("Encoder output shape:", outputs.last_hidden_state.shape)
     
