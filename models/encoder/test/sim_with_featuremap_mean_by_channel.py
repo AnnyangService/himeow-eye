@@ -6,31 +6,35 @@ import numpy as np
 from encoder_test import TestSamEncoder
 
 class SamSimilarityCalculator:
-    """SAM 인코더를 통과시킨 feature map 전체를 사용하여 이미지 간 유사도를 계산"""
+    """SAM 인코더를 통과시킨 feature map의 채널별 평균을 사용하여 이미지 간 유사도를 계산"""
     
-    def compute_cosine_similarity_full(self, feature1: torch.Tensor, feature2: torch.Tensor) -> torch.Tensor:
-        """전체 feature map을 사용하여 두 이미지 간의 코사인 유사도를 계산
+    def compute_cosine_similarity_channel_mean(self, feature1: torch.Tensor, feature2: torch.Tensor) -> torch.Tensor:
+        """각 위치(64x64)에서 채널(256) 방향의 평균을 사용하여 두 이미지 간의 코사인 유사도를 계산
         
         Args:
             feature1 (torch.Tensor): 첫 번째 이미지의 feature map [1, 64, 64, 256]
             feature2 (torch.Tensor): 두 번째 이미지의 feature map [1, 64, 64, 256]
             
         Returns:
-            torch.Tensor: 위치별 코사인 유사도의 평균값 (scalar)
+            torch.Tensor: 코사인 유사도 값 (scalar)
         """
-        # feature map 형태 변환: [1, 64, 64, 256] -> [4096, 256]
-        f1 = feature1.reshape(-1, feature1.size(-1))
-        f2 = feature2.reshape(-1, feature2.size(-1))
+        # 채널 방향으로 평균 계산 
+        # [1, 64, 64, 256] -> [1, 64, 64]
+        f1_mean = torch.mean(feature1, dim=-1).squeeze(0)  # [64, 64]
+        f2_mean = torch.mean(feature2, dim=-1).squeeze(0)  # [64, 64]
+        
+        # 벡터화 (flatten)
+        f1_flat = f1_mean.reshape(-1)  # [4096]
+        f2_flat = f2_mean.reshape(-1)  # [4096]
         
         # L2 정규화 적용
-        f1_norm = F.normalize(f1, p=2, dim=1)
-        f2_norm = F.normalize(f2, p=2, dim=1)
+        f1_norm = F.normalize(f1_flat.unsqueeze(0), p=2, dim=1)  # [1, 4096]
+        f2_norm = F.normalize(f2_flat.unsqueeze(0), p=2, dim=1)  # [1, 4096]
         
-        # 위치별 코사인 유사도 계산
+        # 코사인 유사도 계산
         similarity = torch.mm(f1_norm, f2_norm.t())
         
-        # 대각 요소의 평균 계산 (위치별 유사도의 평균)
-        return similarity.diag().mean()
+        return similarity.item()
     
     def compute_batch_similarities(self, 
                               generated_features: List[torch.Tensor], 
@@ -56,10 +60,10 @@ class SamSimilarityCalculator:
             
             for orig_idx, orig_feature in enumerate(original_features):
                 orig_name = Path(original_paths[orig_idx]).name
-                similarity = self.compute_cosine_similarity_full(
+                similarity = self.compute_cosine_similarity_channel_mean(
                     gen_feature, orig_feature
                 )
-                results[gen_name][orig_name] = similarity.item()
+                results[gen_name][orig_name] = similarity
                 
         return results
     
@@ -75,7 +79,7 @@ class SamSimilarityCalculator:
             include_stats (bool): 통계 정보 포함 여부
         """
         with open(save_path, 'w') as f:
-            f.write("=== Image Similarity Results ===\n\n")
+            f.write("=== Image Similarity Results (Using Channel Mean at Each Position) ===\n\n")
             
             for gen_img, similarities in results.items():
                 f.write(f"Generated Image: {gen_img}\n")
@@ -134,7 +138,7 @@ def main():
     )
     
     # 결과 저장
-    save_path = base_path / "encoder_test_result" / "sim_with_featuremap_all" / "similarity_results1.txt"
+    save_path = base_path / "encoder_test_result" / "sim_with_featuremap_mean_by_channel" / "similarity_results1.txt"
     save_path.parent.mkdir(parents=True, exist_ok=True)
     
     calculator.save_similarity_results(
