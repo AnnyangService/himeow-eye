@@ -4,3 +4,7 @@ __pycache__/
 *.pyc
 *.png
 *.jpg
+
+#zoo0o
+data/dataset/*
+data/dataset_yolo/*
