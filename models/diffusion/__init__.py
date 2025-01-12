@@ -11,7 +11,7 @@ from diffusers.optimization import get_cosine_schedule_with_warmup
 
 if __name__ == "__main__":
     config = TrainingConfig()
-    dataset = ImageDataset(image_dir="/home/minelab/바탕화면/ANN/himeow/filtered_by_breeds_datasets/brachy/abnormal", image_size=config.image_size)
+    dataset = ImageDataset(image_dir="/home/minelab/바탕화면/ANN/Taehwa/himeow-eye/filtered_by_breeds_datasets/brachy/abnormal", image_size=config.image_size)
     train_dataloader = DataLoader(dataset, batch_size=config.train_batch_size, shuffle=True)
 
     model = get_model(image_size=config.image_size)
