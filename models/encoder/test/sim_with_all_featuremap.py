@@ -134,7 +134,7 @@ def main():
     )
     
     # 결과 저장
-    save_path = base_path / "encoder_test_result" / "sim_with_all_featuremap" / "similarity_results1.txt"
+    save_path = base_path / "encoder_test_result" / "sim_with_featuremap_all" / "similarity_results1.txt"
     save_path.parent.mkdir(parents=True, exist_ok=True)
     
     calculator.save_similarity_results(
