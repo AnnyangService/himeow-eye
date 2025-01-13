@@ -1,5 +1,4 @@
-origin_datasets
-filtered_by_breeds_datasets
+datasets
 __pycache__/
 *.pyc
 *.png
