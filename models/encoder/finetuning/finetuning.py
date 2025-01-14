@@ -44,9 +44,15 @@ def freeze_params(model, exclude_encoder=True):
 
 def main():
     # GPU 설정
-    device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
-    torch.cuda.set_device(device)
+    # device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
+    # torch.cuda.set_device(device)
+    # print(f"Using device: {device}")
+    
+    os.environ["CUDA_VISIBLE_DEVICES"] = "3"  # 3번 GPU만 보이도록 설정
+    torch.cuda.set_device(0)  # CUDA_VISIBLE_DEVICES에 의해 보이는 첫 번째(유일한) GPU 선택
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
+    print(f"Current GPU: {torch.cuda.current_device()}")
     
     # 모델과 프로세서 초기화
     model_name = "facebook/sam-vit-huge"
@@ -57,7 +63,8 @@ def main():
     freeze_params(model)
     
     # GPU로 모델 이동
-    model = model.cuda(3)
+    model.to(device)
+    # model = model.cuda(3)
     
     # 데이터셋 설정
     train_dataset = CatEyeDataset(
@@ -69,15 +76,15 @@ def main():
     training_args = TrainingArguments(
         output_dir="jojun/himeow-eye/models/encoder/finetuning/sam_encoder_finetuned",
         num_train_epochs=100,
-        per_device_train_batch_size=2,
+        per_device_train_batch_size=1,
         learning_rate=2e-5,
         weight_decay=0.01,
         save_strategy="epoch",
         save_steps=20,  # 20 에포크마다 저장
         save_total_limit=3,  # 최근 3개의 체크포인트만 유지
-        dataloader_num_workers=4,
+        dataloader_num_workers=2,
         fp16=True,  # 메모리 효율을 위한 mixed precision training
-        gradient_accumulation_steps=8,  # 메모리 효율을 위한 gradient accumulation
+        gradient_accumulation_steps=16,  # 메모리 효율을 위한 gradient accumulation
     )
     
     # Trainer 초기화
