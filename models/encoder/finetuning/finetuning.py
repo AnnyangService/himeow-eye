@@ -49,7 +49,7 @@ def main():
     # print(f"Using device: {device}")
     
     os.environ["CUDA_VISIBLE_DEVICES"] = "3"  # 3번 GPU만 보이도록 설정
-    torch.cuda.set_device(0)  # CUDA_VISIBLE_DEVICES에 의해 보이는 첫 번째(유일한) GPU 선택
+    torch.cuda.set_device(0)  # CUDA_VISIBLE_DEVICES에 의해 보이는 첫 번째 GPU 선택
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
     print(f"Current GPU: {torch.cuda.current_device()}")
