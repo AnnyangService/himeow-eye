@@ -14,6 +14,11 @@ def train(config, model, train_dataloader, noise_scheduler, optimizer, lr_schedu
     model, optimizer, train_dataloader, lr_scheduler = accelerator.prepare(
         model, optimizer, train_dataloader, lr_scheduler
     )
+    
+    if(torch.cuda.is_available()): 
+        print(1)
+    else:
+        print("using cpu")
 
     for epoch in range(config.num_epochs):
         progress_bar = tqdm(train_dataloader, desc=f"Epoch {epoch}")
@@ -31,6 +36,6 @@ def train(config, model, train_dataloader, noise_scheduler, optimizer, lr_schedu
                 lr_scheduler.step()
                 optimizer.zero_grad()
 
-        # Evaluate and save model
+        # 모델 저장
         if epoch % config.save_image_epochs == 0:
             evaluate(config, accelerator.unwrap_model(model), noise_scheduler, epoch)
