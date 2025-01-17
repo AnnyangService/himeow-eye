@@ -1,4 +1,5 @@
 datasets
+filtered_by_breeds_datasets
 __pycache__/
 agumented_dataset
 *.pyc
