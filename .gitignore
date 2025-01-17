@@ -5,5 +5,9 @@ __pycache__/
 *.jpg
 
 #zoo0o
-data/dataset/*
-data/dataset_yolo/*
+data/datasets/*
+data/datasets_yolo/*
+models/yolo/base/runs/*
+yolo11n.pt
+yolov8n-cls.pt
+yolov8x-cls.pt
