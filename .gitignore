@@ -1,7 +1,10 @@
-origin_datasets
-filtered_by_breeds_datasets
+datasets
 __pycache__/
 agumented_dataset
 *.pyc
 *.png
 *.jpg
+
+#zoo0o
+data/dataset/*
+data/dataset_yolo/*
