@@ -3,6 +3,9 @@ __pycache__/
 *.pyc
 *.png
 *.jpg
+models/encoder/finetuning/yolo/basic_models
+models/encoder/finetuning/yolo/custom_models
+
 
 #zoo0o
 data/datasets/*
