@@ -3,8 +3,8 @@ __pycache__/
 *.pyc
 *.png
 *.jpg
-jojun/himeow-eye/models/encoder/finetuning/yolo/basic_models
-jojun/himeow-eye/models/encoder/finetuning/yolo/custom_models
+models/encoder/finetuning/yolo/basic_models
+models/encoder/finetuning/yolo/custom_models
 
 
 #zoo0o
