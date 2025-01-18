@@ -1,9 +1,17 @@
 from ultralytics import YOLO
 
-# pre-trained segmentation 모델 로드
-model = YOLO('yolo11x-seg.pt')  # 다른 옵션: yolov8s-seg.pt, yolov8m-seg.pt, yolov8l-seg.pt, yolov8x-seg.pt
+# Load a model
+model = YOLO("/home/minelab/desktop/ANN/jojun/himeow-eye/models/encoder/finetuning/yolo/basic_models/yolo11x-seg.pt")  # load a pretrained model (recommended for training)
 
-# 이미지로 테스트
-results = model(source='/home/minelab/desktop/ANN/jojun/himeow-eye/assets/encoder_test_dataset',
-                device=3,
-                save=True)  # 결과가 runs/segment/predict 폴더에 저장됨
+# Train the model
+results = model.train(
+    data="/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/yolo_seg_datasets/data.yaml",
+    epochs=100,          # 총 에포크 수
+    imgsz=640,          # 이미지 크기
+    batch=16,           # 배치 크기
+    workers=8,          # 데이터 로딩 워커 수
+    device=3,           # GPU 선택
+    val=True,           # validation 활성화
+    save=True,          # 최상의 모델 저장
+    save_period=10      # 10 에포크마다 모델 저장
+)
