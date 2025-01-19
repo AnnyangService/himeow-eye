@@ -11,6 +11,8 @@ models/encoder/finetuning/yolo/custom_models
 data/datasets/*
 data/datasets_yolo/*
 models/yolo/base/runs/*
+models/vit/base/runs/*
 yolo11n.pt
 yolov8n-cls.pt
 yolov8x-cls.pt
+test.py

@@ -27,7 +27,7 @@ model.train(
     lr0=learning_rate,
     workers=4,  # 데이터 로드 작업자 수
     project="/home/minelab/desktop/ANN/zoo0o/himeow-eye/models/yolo/base/runs",  # 결과 저장 디렉토리
-    name="yolo8x-cls",
+    name="yolo_model",
 )
 
 # Test
