@@ -18,6 +18,8 @@ data/datasets/*
 data/datasets_yolo/*
 models/yolo/base/runs/*
 models/vit/base/runs/*
+models/effnet/base/runs/*
+models/effnet/base_opt_sched/runs/*
 yolo11n.pt
 yolov8n-cls.pt
 yolov8x-cls.pt
