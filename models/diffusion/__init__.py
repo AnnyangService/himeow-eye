@@ -18,4 +18,4 @@ if __name__ == "__main__":
     noise_scheduler = DDPMScheduler(num_train_timesteps=1000)
     optimizer = optim.AdamW(model.parameters(), lr=config.learning_rate)
     lr_scheduler = get_cosine_schedule_with_warmup(optimizer, 500, len(train_dataloader) * config.num_epochs)
-    train(config, model, train_dataloader, noise_scheduler, optimizer, lr_scheduler)    
+    train(config, model, train_dataloader, noise_scheduler, optimizer, lr_scheduler)

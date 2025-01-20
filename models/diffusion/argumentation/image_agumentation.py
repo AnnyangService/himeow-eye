@@ -9,19 +9,19 @@ def augment_image(image, output_dir, file_name):
     # 원본 이미지 저장
     cv2.imwrite(os.path.join(output_dir, f"{file_name}_original.jpg"), image)
 
-    # 회전 (90, 180, 270도)
-    for angle in [90, 180, 270]:
-        rotated = rotate_image(image, angle)
-        cv2.imwrite(os.path.join(output_dir, f"{file_name}_rotated_{angle}.jpg"), rotated)
+    # # 회전 (90, 180, 270도)
+    # for angle in [90, 180, 270]:
+    #     rotated = rotate_image(image, angle)
+    #     cv2.imwrite(os.path.join(output_dir, f"{file_name}_rotated_{angle}.jpg"), rotated)
 
-    # 이동 (x축, y축으로 50픽셀씩)
-    translated = translate_image(image, 50, 50)
-    cv2.imwrite(os.path.join(output_dir, f"{file_name}_translated.jpg"), translated)
+    # # 이동 (x축, y축으로 50픽셀씩)
+    # translated = translate_image(image, 50, 50)
+    # cv2.imwrite(os.path.join(output_dir, f"{file_name}_translated.jpg"), translated)
 
-    # 스케일 변경 (0.5배, 1.5배)
-    for scale in [0.5, 1.5]:
-        scaled = scale_image(image, scale)
-        cv2.imwrite(os.path.join(output_dir, f"{file_name}_scaled_{scale}.jpg"), scaled)
+    # # 스케일 변경 (0.5배, 1.5배)
+    # for scale in [0.5, 1.5]:
+    #     scaled = scale_image(image, scale)
+    #     cv2.imwrite(os.path.join(output_dir, f"{file_name}_scaled_{scale}.jpg"), scaled)
 
     # 수평 및 수직 뒤집기
     flipped_h = flip_image(image, 1)
@@ -47,11 +47,9 @@ def scale_image(image, scale):
 def flip_image(image, flip_code):
     return cv2.flip(image, flip_code)
 
-# 이미지 증강 실행
 input_image_folder = '/home/minelab/desktop/ANN/Taehwa/himeow-eye/filtered_by_breeds_datasets/brachy/abnormal'  # 입력 이미지 폴더 경로
 output_directory = '/home/minelab/desktop/ANN/Taehwa/himeow-eye/agumented_dataset/basic_brachy'  # 출력 디렉토리
 
-# 이미지 파일 확장자 필터
 valid_extensions = ('.jpg', '.jpeg', '.png', '.bmp', '.tiff')
 
 # 입력 폴더 내 모든 이미지 처리
