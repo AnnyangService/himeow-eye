@@ -31,8 +31,8 @@ def collect_and_clean_dataset(source_dir, target_dir):
 
 if __name__ == "__main__":
     # 경로 설정
-    source_directory = "/home/minelab/바탕화면/ANN/jojun/himeow-eye/datasets/일반"
-    target_directory = "/home/minelab/바탕화면/ANN/jojun/himeow-eye/datasets/for_encoder"
+    source_directory = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/일반"
+    target_directory = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases"
     
     # 실행
     copied, removed = collect_and_clean_dataset(source_directory, target_directory)
