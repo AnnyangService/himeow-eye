@@ -32,19 +32,23 @@ def classify_by_breeds_and_diseases(src_directory, dst_base, disease_mapping):
                     breed = data.get('images', {}).get('meta', {}).get('breed')
 
                     # 유/무(normal/abnormal) 구분 (경로에서 추출)
-                    if "무" in root:
-                        disease_status = "abnormal"
-                    elif "유" in root:
-                        disease_status = "normal"
+                    if "유" in root:
+                        disease_status = "abnormal"  # "유" -> 비정상
+                    elif "무" in root:
+                        disease_status = "normal"  # "무" -> 정상
                     else:
                         print(f"Warning: Could not determine status from path for file {file_path}")
                         continue
                     
-                    # 질병 정보 추출 (JSON 내 label > label_disease_nm 필드)
-                    disease_found_kor = data.get('label', {}).get('label_disease_nm')
-                    
+                    # 질병 정보 추출 (경로에서 추출)
+                    disease_found_kor = None
+                    for disease in disease_mapping.keys():
+                        if disease in root:
+                            disease_found_kor = disease
+                            break
+
                     if not disease_found_kor:
-                        print(f"Warning: No disease matched for file {file_path}")
+                        print(f"Warning: No disease matched in path for file {file_path}")
                         continue
                     
                     # 한글 질병 이름을 영어 이름으로 변환
@@ -95,8 +99,8 @@ for face_type, face_counts in counts.items():
     print(f"\n얼굴 타입: {face_type}")
     for disease, disease_counts in face_counts.items():
         print(f"  질병: {disease}")
-        print(f"    - normal (유): {disease_counts['normal']}개")
-        print(f"    - abnormal (무): {disease_counts['abnormal']}개")
+        print(f"    - normal (무): {disease_counts['normal']}개")
+        print(f"    - abnormal (유): {disease_counts['abnormal']}개")
         print(f"    - 총: {sum(disease_counts.values())}개")
 
 total = sum(

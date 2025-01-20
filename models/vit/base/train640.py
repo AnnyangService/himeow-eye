@@ -5,17 +5,20 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns  # Seaborn 추가
+import seaborn as sns
 import json
 import warnings
+from torch.utils.data import DataLoader
+from transformers.trainer_callback import EarlyStoppingCallback
+from torchvision.transforms import Compose, RandomHorizontalFlip, RandomRotation, Resize, ColorJitter, ToTensor
 
 # 불필요한 경고 무시
 warnings.filterwarnings("ignore", message="Was asked to gather along dimension 0, but all input tensors were scalars")
 
 # 로깅 설정
 logging.basicConfig(
-    filename="debug.log",  # 디버깅 로그 파일
-    level=logging.INFO,     # 로그 레벨 설정
+    filename="debug.log",
+    level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
@@ -23,12 +26,12 @@ logging.basicConfig(
 data_dir = "/home/minelab/desktop/ANN/zoo0o/himeow-eye/data/datasets_yolo/split_by_brachy_datasets/datasets"
 
 # ViT 모델 및 프로세서 설정
-model_name = "google/vit-base-patch16-224-in21k"
+model_name = "google/vit-large-patch32-384"
 
 # 모델 구성 수정
 config = ViTConfig.from_pretrained(
     model_name,
-    image_size=640,  # 입력 크기 수정
+    image_size=640,
     num_labels=2,
     id2label={0: "normal", 1: "abnormal"},
     label2id={"normal": 0, "abnormal": 1}
@@ -38,33 +41,37 @@ config = ViTConfig.from_pretrained(
 model = ViTForImageClassification.from_pretrained(
     model_name,
     config=config,
-    ignore_mismatched_sizes=True  # 크기 불일치 무시
+    ignore_mismatched_sizes=True
 ).to("cuda:3")
 
 # 프로세서 설정
 processor = ViTImageProcessor.from_pretrained(
     model_name,
-    size={"height": 640, "width": 640}  # 640x640으로 설정
+    size={"height": 640, "width": 640},
+    do_rescale=False  # Rescaling 중복 방지
 )
 
 # 데이터셋 로드 및 전처리
 dataset = load_dataset("imagefolder", data_dir=data_dir)
 
-# 데이터 전처리 함수
+# 데이터 증강 및 전처리 함수
+augmentation = Compose([
+    Resize((640, 640)),
+    RandomHorizontalFlip(),
+    RandomRotation(15),
+    ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1),
+    ToTensor()
+])
+
 def preprocess_function(examples):
-    inputs = processor(images=examples["image"], return_tensors="pt")
-
-    if not hasattr(preprocess_function, "logged") or not preprocess_function.logged:
-        logging.info(f"Processor outputs shape: {inputs['pixel_values'].shape}")
-        preprocess_function.logged = True
-
+    images = [augmentation(image.convert("RGB")) for image in examples["image"]]
+    inputs = processor(images=images, return_tensors="pt")
     return {
-        "pixel_values": inputs["pixel_values"].squeeze(0) if inputs["pixel_values"].dim() == 4 else inputs["pixel_values"],
+        "pixel_values": inputs["pixel_values"],
         "labels": examples["label"]
     }
 
-preprocess_function.logged = False
-encoded_dataset = dataset.map(preprocess_function, batched=True)
+encoded_dataset = dataset.map(preprocess_function, batched=True, num_proc=4)  # 병렬 처리 적용
 
 # 데이터 Collate 함수
 def collate_fn(batch):
@@ -74,20 +81,12 @@ def collate_fn(batch):
             for example in batch
         ])
         labels = torch.tensor([example["labels"] for example in batch])
-
-        if not hasattr(collate_fn, "logged") or not collate_fn.logged:
-            logging.info(f"Batch pixel values shape: {pixel_values.shape}")
-            logging.info(f"Batch labels shape: {labels.shape}")
-            collate_fn.logged = True
-
     except Exception as e:
         logging.error(f"Error in collate_fn: {e}")
         logging.error(f"Batch data: {batch}")
         raise e
 
     return {"pixel_values": pixel_values, "labels": labels}
-
-collate_fn.logged = False
 
 # TrainingArguments 설정
 training_args = TrainingArguments(
@@ -96,23 +95,27 @@ training_args = TrainingArguments(
     save_steps=100,
     eval_steps=100,
     logging_steps=10,
-    learning_rate=0.001,
+    learning_rate=0.0001,  # 안정적인 학습률
     per_device_train_batch_size=8,
     per_device_eval_batch_size=8,
-    num_train_epochs=100,
+    num_train_epochs=300,
     save_total_limit=2,
     load_best_model_at_end=True,
     remove_unused_columns=False,
     report_to="tensorboard",
+    metric_for_best_model="eval_loss",
+    greater_is_better=False,
+    fp16=True
 )
 
-# Trainer 설정
+# Trainer 설정 (EarlyStopping 추가)
 trainer = Trainer(
     model=model,
     args=training_args,
     train_dataset=encoded_dataset["train"],
     eval_dataset=encoded_dataset["validation"],
     data_collator=collate_fn,
+    callbacks=[EarlyStoppingCallback(early_stopping_patience=3)]
 )
 
 # 모델 학습
@@ -127,7 +130,7 @@ def evaluate_and_save_results(dataset, dataset_name, output_dir):
 
     accuracy = accuracy_score(true_labels, pred_labels)
     conf_matrix = confusion_matrix(true_labels, pred_labels, labels=[0, 1])
-    report = classification_report(true_labels, pred_labels, target_names=["normal", "abnormal"], output_dict=True)
+    report = classification_report(true_labels, pred_labels, target_names=["normal", "abnormal"], output_dict=True, zero_division=1)
 
     results = {
         "accuracy": accuracy,
