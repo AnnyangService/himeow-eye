@@ -19,7 +19,7 @@ def extract_blue_mask(img):
     
     binary_mask = (blue_mask > 0).astype(np.uint8)
     
-    return blue_mask
+    return binary_mask
 
 def convert_masks_to_tiff(input_dir, output_dir):
     """디렉토리 내의 모든 jpg 마스크를 tiff로 변환하고 저장"""
@@ -38,7 +38,7 @@ def convert_masks_to_tiff(input_dir, output_dir):
         
         # PIL Image로 변환 및 리사이즈
         pil_mask = Image.fromarray(binary_mask)
-        pil_mask = pil_mask.resize((400, 400))
+        pil_mask = pil_mask.resize((256, 256))
         
         # TIFF로 저장
         pil_mask.save(output_path)
@@ -48,6 +48,9 @@ def visualize_mask(image_path, mask_path, save_path=None):
     # 원본 이미지와 마스크 로드
     img = cv2.imread(image_path)
     img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    
+    # 원본 이미지 resize (256x256)
+    img_rgb = cv2.resize(img_rgb, (256, 256))
     
     # 마스크 로드 
     mask = np.array(Image.open(mask_path))
@@ -73,16 +76,17 @@ def visualize_mask(image_path, mask_path, save_path=None):
     plt.show()
     
 
-# # 경로 설정
-# input_dir = '/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases_gtmasks/good_predictions'
-# output_dir = '/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases_gtmasks/tiff_masks'
 
-# # 마스크 변환
-# convert_masks_to_tiff(input_dir, output_dir)
+# 경로 설정
+input_dir = '/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases_gtmasks/good_predictions'
+output_dir = '/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases_gtmasks/tiff_masks'
+
+# 마스크 변환
+convert_masks_to_tiff(input_dir, output_dir)
 
 
-# 변환된 결과 시각화
-image_path = '/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases_gtmasks/good_predictions/crop_C0_0ec2d16c-60a5-11ec-8402-0a7404972c70.jpg'
-mask_path = '/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases_gtmasks/tiff_masks/crop_C0_0ec2d16c-60a5-11ec-8402-0a7404972c70.tiff'
-visualization_path = '/home/minelab/desktop/ANN/visualization.png'
-visualize_mask(image_path, mask_path, visualization_path)
+# # 변환된 결과 시각화
+# image_path = '/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases_gtmasks/good_predictions/crop_C0_0ec2d16c-60a5-11ec-8402-0a7404972c70.jpg'
+# mask_path = '/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases_gtmasks/tiff_masks/crop_C0_0ec2d16c-60a5-11ec-8402-0a7404972c70.tiff'
+# visualization_path = '/home/minelab/desktop/ANN/visualization.png'
+# visualize_mask(image_path, mask_path, visualization_path)
