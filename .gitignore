@@ -11,6 +11,10 @@ models/encoder/finetuning/yolo/custom_models
 #Taehwa
 agumented_dataset
 *.pt
+unet
+scheduler
+logs
+model_index.json
 
 #zoo0o
 

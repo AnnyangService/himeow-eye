@@ -1,8 +1,9 @@
 #UNet2DModel 생성하기
 
 from diffusers import UNet2DModel
+from scripts.config import TrainingConfig
 
-def get_model(image_size=128):
+def get_model(image_size=TrainingConfig.image_size):
     model = UNet2DModel(
         sample_size=image_size, #이미지 해상도 128
         in_channels=3, # 입력 채널 수, RGB 이미지에서 3
