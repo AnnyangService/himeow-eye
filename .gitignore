@@ -6,7 +6,7 @@ __pycache__/
 *.jpg
 models/encoder/finetuning/yolo/basic_models
 models/encoder/finetuning/yolo/custom_models
-
+models/encoder/finetuning/custom_models
 
 #Taehwa
 agumented_dataset

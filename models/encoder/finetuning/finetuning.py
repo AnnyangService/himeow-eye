@@ -1,104 +1,261 @@
+# from dataloader import load_dataset
+# from transformers import SamProcessor
+# from sam_dataset import SAMDataset
+# from torch.utils.data import DataLoader
+# from transformers import SamModel 
+# from torch.optim import Adam
+# import monai
+# from tqdm import tqdm
+# from statistics import mean
+# import torch
+# from torch.nn.functional import threshold, normalize
+# import os
+# import gc
+
+# # GPU 설정
+# os.environ["CUDA_VISIBLE_DEVICES"] = "0, 1"
+# os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'expandable_segments:True'
+# torch.cuda.empty_cache()
+# gc.collect()
+
+
+# # 모델 저장 경로 설정
+# save_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/models/encoder/finetuning/custom_models"
+# os.makedirs(save_dir, exist_ok=True)
+
+
+# # load dataset
+# dataset = load_dataset(
+#         image_dir="/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases",
+#         mask_dir="/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases_gtmasks/tiff_masks"
+#     )
+
+# # pytorch dataset
+# processor = SamProcessor.from_pretrained("facebook/sam-vit-base")
+# train_dataset = SAMDataset(dataset=dataset, processor=processor)
+
+# # pytorch dataloader
+# train_dataloader = DataLoader(train_dataset, batch_size=4, shuffle=True)
+
+# # load the model
+# model = SamModel.from_pretrained("facebook/sam-vit-base")
+
+# # Freeze prompt_encoder 와 mask_decoder
+# for name, param in model.named_parameters():
+#     if name.startswith("prompt_encoder") or name.startswith("mask_decoder"):
+#         param.requires_grad_(False)
+#     else:  # vision_encoder
+#         param.requires_grad_(True)
+
+# # train the model
+# optimizer = Adam(model.vision_encoder.parameters(), lr=1e-6, weight_decay=0)
+# seg_loss = monai.losses.DiceCELoss(sigmoid=True, squared_pred=True, reduction='mean')
+
+
+# num_epochs = 50
+
+# # CUDA 설정
+# device = "cuda" if torch.cuda.is_available() else "cpu"
+# model = torch.nn.DataParallel(model)
+# model.to(device)
+
+# # 최고 성능 모델 저장을 위한 변수
+# best_loss = float('inf')
+
+# model.train()
+# for epoch in range(num_epochs):
+#     epoch_losses = []
+#     for batch in tqdm(train_dataloader):
+#       # forward pass
+#       outputs = model(pixel_values=batch["pixel_values"].to(device),
+#                       input_boxes=batch["input_boxes"].to(device),
+#                       multimask_output=False)
+
+#       # compute loss
+#       predicted_masks = outputs.pred_masks.squeeze(1)
+#       ground_truth_masks = batch["ground_truth_mask"].float().to(device)
+#       loss = seg_loss(predicted_masks, ground_truth_masks.unsqueeze(1))
+
+#       # backward pass (compute gradients of parameters w.r.t. loss)
+#       optimizer.zero_grad()
+#       loss.backward()
+
+#       # optimize
+#       optimizer.step()
+#       epoch_losses.append(loss.item())
+
+#     mean_loss = mean(epoch_losses)
+#     print(f'EPOCH: {epoch}')
+#     print(f'Mean loss: {mean_loss}')
+    
+#     # 최고 성능 모델 저장
+#     if mean_loss < best_loss:
+#         best_loss = mean_loss
+#         # module. 제거하고 vision encoder만 저장
+#         vision_encoder_dict = {name.replace('module.', ''): param 
+#                              for name, param in model.state_dict().items() 
+#                              if 'vision_encoder' in name}
+#         torch.save(vision_encoder_dict, os.path.join(save_dir, 'best_vision_encoder.pth'))
+
+# print("Training finished!")
+
+##################################
+##################################
+##################################
+##################################
+##################################
+from dataloader import load_dataset
+from transformers import SamProcessor
+from sam_dataset import SAMDataset
+from torch.utils.data import DataLoader
+from transformers import SamModel 
+from torch.optim import Adam
+import monai
+from tqdm import tqdm
+from statistics import mean
 import torch
-from transformers import SamModel, SamProcessor, TrainingArguments, Trainer
-from torch.utils.data import Dataset
-from PIL import Image
 import os
+import gc
+import json
 
-class CatEyeDataset(Dataset):
-    def __init__(self, image_dir, processor):
-        self.image_dir = image_dir
-        self.processor = processor
-        self.image_files = [f for f in os.listdir(image_dir) 
-                          if f.endswith(('.jpg', '.jpeg', '.png'))]
-        
-    def __len__(self):
-        return len(self.image_files)
-    
-    def __getitem__(self, idx):
-        # 이미지 로드
-        image_path = os.path.join(self.image_dir, self.image_files[idx])
-        image = Image.open(image_path).convert('RGB')
-        
-        # SAM 프로세서를 사용하여 이미지 전처리
-        inputs = self.processor(
-            images=image,
-            return_tensors="pt",
-            do_resize=True,
-            size={"longest_edge": 1024},
-            do_normalize=True
-        )
-        
-        return {
-            "pixel_values": inputs.pixel_values.squeeze(0),
-            "original_sizes": inputs.original_sizes.squeeze(0),
-            "reshaped_input_sizes": inputs.reshaped_input_sizes.squeeze(0),
-        }
+# GPU 설정
+os.environ["CUDA_VISIBLE_DEVICES"] = "0, 1"
+os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'expandable_segments:True'
+torch.cuda.empty_cache()
+gc.collect()
 
-def freeze_params(model, exclude_encoder=True):
-    """vision encoder를 제외한 모든 파라미터는 freeze"""
-    for name, param in model.named_parameters():
-        if exclude_encoder and "vision_encoder" in name:
-            param.requires_grad = True
-        else:
-            param.requires_grad = False
+# 모델 저장 경로 설정
+save_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/models/encoder/finetuning/custom_models"
+os.makedirs(save_dir, exist_ok=True)
 
-def main():
-    # GPU 설정
-    # device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
-    # torch.cuda.set_device(device)
-    # print(f"Using device: {device}")
-    
-    os.environ["CUDA_VISIBLE_DEVICES"] = "3"  # 3번 GPU만 보이도록 설정
-    torch.cuda.set_device(0)  # CUDA_VISIBLE_DEVICES에 의해 보이는 첫 번째 GPU 선택
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print(f"Using device: {device}")
-    print(f"Current GPU: {torch.cuda.current_device()}")
-    
-    # 모델과 프로세서 초기화
-    model_name = "facebook/sam-vit-huge"
-    model = SamModel.from_pretrained(model_name)
-    processor = SamProcessor.from_pretrained(model_name)
-    
-    # vision encoder만 학습하도록 설정
-    freeze_params(model)
-    
-    # GPU로 모델 이동
-    model.to(device)
-    # model = model.cuda(3)
-    
-    # 데이터셋 설정
-    train_dataset = CatEyeDataset(
-        image_dir="/home/minelab/바탕화면/ANN/jojun/himeow-eye/datasets/for_encoder",
-        processor=processor
-    )
-    
-    # 학습 설정
-    training_args = TrainingArguments(
-        output_dir="jojun/himeow-eye/models/encoder/finetuning/sam_encoder_finetuned",
-        num_train_epochs=100,
-        per_device_train_batch_size=1,
-        learning_rate=2e-5,
-        weight_decay=0.01,
-        save_strategy="epoch",
-        save_steps=20,  # 20 에포크마다 저장
-        save_total_limit=3,  # 최근 3개의 체크포인트만 유지
-        dataloader_num_workers=2,
-        fp16=True,  # 메모리 효율을 위한 mixed precision training
-        gradient_accumulation_steps=16,  # 메모리 효율을 위한 gradient accumulation
-    )
-    
-    # Trainer 초기화
-    trainer = Trainer(
-        model=model,
-        args=training_args,
-        train_dataset=train_dataset,
-    )
-    
-    # 학습 시작
-    trainer.train()
-    
-    # 최종 모델 저장
-    trainer.save_model("jojun/himeow-eye/models/encoder/finetuning/sam_encoder_finetuned/final_model")
+def save_checkpoint(epoch, model, optimizer, loss, save_path):
+  checkpoint = {
+      'epoch': epoch,
+      'vision_encoder_state_dict': {
+          name.replace('module.', ''): param 
+          for name, param in model.state_dict().items() 
+          if 'vision_encoder' in name
+      },
+      'optimizer_state_dict': optimizer.state_dict(),
+      'loss': loss,
+  }
+  torch.save(checkpoint, save_path)
 
-if __name__ == "__main__":
-    main()
+def load_checkpoint(model, optimizer, checkpoint_path):
+  checkpoint = torch.load(checkpoint_path)
+  
+  current_state_dict = model.state_dict()
+  for name, param in checkpoint['vision_encoder_state_dict'].items():
+      current_state_dict[f'module.{name}'] = param
+  model.load_state_dict(current_state_dict)
+  
+  optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+  
+  return checkpoint['epoch'], checkpoint['loss']
+
+# load dataset
+dataset = load_dataset(
+      image_dir="/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases",
+      mask_dir="/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases_gtmasks/tiff_masks"
+  )
+
+# pytorch dataset
+processor = SamProcessor.from_pretrained("facebook/sam-vit-base")
+train_dataset = SAMDataset(dataset=dataset, processor=processor)
+
+# pytorch dataloader
+train_dataloader = DataLoader(train_dataset, batch_size=4, shuffle=True)
+
+# load the model
+model = SamModel.from_pretrained("facebook/sam-vit-base")
+
+# Freeze prompt_encoder와 mask_decoder
+for name, param in model.named_parameters():
+  if name.startswith("prompt_encoder") or name.startswith("mask_decoder"):
+      param.requires_grad_(False)
+  else:  # vision_encoder
+      param.requires_grad_(True)
+
+# train the model
+optimizer = Adam(model.vision_encoder.parameters(), lr=1e-6, weight_decay=0)
+seg_loss = monai.losses.DiceCELoss(sigmoid=True, squared_pred=True, reduction='mean')
+
+num_epochs = 50
+device = "cuda" if torch.cuda.is_available() else "cpu"
+model = torch.nn.DataParallel(model)
+model.to(device)
+
+# 시작 epoch와 best_loss 초기화
+start_epoch = 0
+best_loss = float('inf')
+
+# checkpoint 파일이 있다면 불러오기
+checkpoint_files = [f for f in os.listdir(save_dir) if f.startswith('checkpoint_epoch_')]
+if checkpoint_files:
+    # 가장 마지막 checkpoint 찾기
+    last_checkpoint = max(checkpoint_files, key=lambda x: int(x.split('_')[-1].split('.')[0]))
+    checkpoint_path = os.path.join(save_dir, last_checkpoint)
+    start_epoch, best_loss = load_checkpoint(model, optimizer, checkpoint_path)
+    print(f"Resuming from epoch {start_epoch} with best loss: {best_loss}")
+
+# 학습 히스토리 저장용
+history = {
+  'losses': [],
+  'learning_rates': []
+}
+
+# 학습 시작
+model.train()
+for epoch in range(start_epoch, num_epochs):
+  print(f'\nCurrent Epoch: {epoch}/{num_epochs-1}')
+  epoch_losses = []
+  for batch in tqdm(train_dataloader):
+      outputs = model(
+          pixel_values=batch["pixel_values"].to(device),
+          input_boxes=batch["input_boxes"].to(device),
+          multimask_output=False
+      )
+      
+      predicted_masks = outputs.pred_masks.squeeze(1)
+      ground_truth_masks = batch["ground_truth_mask"].float().to(device)
+      loss = seg_loss(predicted_masks, ground_truth_masks.unsqueeze(1))
+
+      optimizer.zero_grad()
+      loss.backward()
+      optimizer.step()
+      
+      epoch_losses.append(loss.item())
+
+  mean_loss = mean(epoch_losses)
+  print(f'EPOCH: {epoch}')
+  print(f'Mean loss: {mean_loss}')
+  
+  # 히스토리 업데이트
+  history['losses'].append(mean_loss)
+  history['learning_rates'].append(optimizer.param_groups[0]['lr'])
+  
+  # 매 에폭마다 checkpoint 저장
+  save_checkpoint(
+      epoch + 1, 
+      model,
+      optimizer,
+      mean_loss,
+      os.path.join(save_dir, f'checkpoint_epoch_{epoch+1}.pth')
+  )
+  
+  # 매 에폭마다 히스토리 저장
+  with open(os.path.join(save_dir, 'training_history.json'), 'w') as f:
+      json.dump(history, f)
+  
+  # 최고 성능 모델 따로 저장
+  if mean_loss < best_loss:
+      best_loss = mean_loss
+      save_checkpoint(
+          epoch + 1,
+          model,
+          optimizer,
+          mean_loss,
+          os.path.join(save_dir, 'best_checkpoint.pth')
+      )
+
+print("Training finished!")
