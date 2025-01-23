@@ -11,6 +11,11 @@ models/encoder/finetuning/custom_models
 #Taehwa
 agumented_dataset
 *.pt
+unet
+scheduler
+logs
+model_index.json
+wandb
 
 #zoo0o
 
