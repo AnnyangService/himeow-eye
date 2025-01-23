@@ -13,7 +13,7 @@ if __name__ == "__main__":
     #model 가져오기기
     model = get_model(image_size=config.image_size)
     
-    noise_scheduler = DDPMScheduler(num_train_timesteps=1000) #Scheduler 세팅팅
+    noise_scheduler = DDPMScheduler(num_train_timesteps=config.num_train_timestpes) #Scheduler 세팅팅
     
     optimizer = optim.AdamW(model.parameters(), lr=config.learning_rate) #Standard AdamW Optimzier 사용
     

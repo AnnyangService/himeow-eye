@@ -1,4 +1,5 @@
 from accelerate import Accelerator
+from scripts.config import config
 from scripts.evaluate import evaluate
 from tqdm.auto import tqdm
 from pathlib import Path
@@ -36,13 +37,16 @@ def train_loop(config, model, noise_scheduler, optimizer, train_dataloader, lr_s
         for step, batch in enumerate(train_dataloader):
             # print(type(batch), len(batch), batch)
             # break #batch 의 타입을 확인하고 아래  [ ]안에 들어갈 변수를 위한 코드드
-            clean_images = batch[0]
+            clean_images = batch["input"]
             # Sample noise to add to the images
             noise = torch.randn(clean_images.shape).to(clean_images.device)
+            
             bs = clean_images.shape[0]
 
             # Sample a random timestep for each image
-            timesteps = torch.randint(0, noise_scheduler.config.num_train_timesteps, (bs,), device=clean_images.device).long()
+            timesteps = torch.randint(
+                0, noise_scheduler.config.num_train_timesteps, (bs,), device=clean_images.device
+            ).long()
 
             # Add noise to the clean images according to the noise magnitude at each timestep
             # (this is the forward diffusion process)

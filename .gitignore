@@ -15,6 +15,7 @@ unet
 scheduler
 logs
 model_index.json
+wandb
 
 #zoo0o
 

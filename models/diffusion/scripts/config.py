@@ -8,6 +8,7 @@ class TrainingConfig:
     train_batch_size = 16
     eval_batch_size = 16  # 평가 동안에 샘플링할 이미지 수
     num_epochs = 100 #에포크 수
+    num_train_timestpes = 1000 #타임스텝의 수
     gradient_accumulation_steps = 1
     learning_rate = 1e-4
     lr_warmup_steps = 500
