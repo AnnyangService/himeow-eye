@@ -3,7 +3,6 @@ import shutil
 from pathlib import Path
 
 def collect_and_clean_dataset(source_dir, target_dir):
-    """SAM 인코더 파인튜닝을 위해 비궤양성각막염 외 모든 질병에 대해 한 디렉토리로 모으고, .json은 삭제"""
     # 대상 디렉토리 생성
     Path(target_dir).mkdir(parents=True, exist_ok=True)
     
@@ -31,8 +30,8 @@ def collect_and_clean_dataset(source_dir, target_dir):
 
 if __name__ == "__main__":
     # 경로 설정
-    source_directory = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/일반"
-    target_directory = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases"
+    source_directory = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/filtered_by_breeds_datasets/brachy"
+    target_directory = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/keratitis"
     
     # 실행
     copied, removed = collect_and_clean_dataset(source_directory, target_directory)

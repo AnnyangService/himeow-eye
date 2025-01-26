@@ -106,7 +106,7 @@ class OriginVector:
 
     def extract_feature_vector(self, image_path: str) -> np.ndarray:
         """
-        이미지를 인코더에 통과시키고 채널 선택 후 평균 feature map vector 추출
+        이미지를 인코더에 통과시키고 선택된 채널들의 평균 특징맵 추출
         """
         # 이미지 로드 및 처리
         image = Image.open(image_path)
@@ -119,22 +119,24 @@ class OriginVector:
         )
         
         inputs = {k: v.to(self.device) if isinstance(v, torch.Tensor) else v 
-                 for k, v in inputs.items()}
+                for k, v in inputs.items()}
         
         # 특징 추출 및 채널 선택
         with torch.no_grad():
             features = self.vision_encoder(inputs["pixel_values"]).last_hidden_state
             top_channels, scores, _ = self.calculate_channel_scores(features)
             
-            # 선택된 채널들의 특징맵 평균 계산
+            # 선택된 채널들의 특징맵 가져오기
             selected_features = np.stack([
                 features[0, idx].cpu().numpy() 
                 for idx in top_channels[:self.scoring_config['top_k']]
             ])
-            mean_features = np.mean(selected_features, axis=0)
             
-            # 2D 특징맵을 1D 벡터로 변환 (전역 평균 풀링)
-            feature_vector = np.mean(mean_features, axis=(0, 1))
+            # 채널 방향으로 평균 계산 (shape: [H, W])
+            mean_feature_map = np.mean(selected_features, axis=0)
+            
+            # 특징맵을 1차원 벡터로 변환 (shape: [H * W])
+            feature_vector = mean_feature_map.flatten()
             
             return feature_vector
 
@@ -273,7 +275,7 @@ if __name__ == "__main__":
     }
     
     # 입력 디렉토리와 결과 저장 경로 설정
-    input_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases"
+    input_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/keratitis"
     output_path = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/vectors/origin.npy"
     
     # 디렉토리 처리
