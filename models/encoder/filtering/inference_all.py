@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
+"""모든 이미지 인코더 통과 후 모든 채널 시각화"""
+
 class CustomSamEncoder:
     def __init__(self, model_name="facebook/sam-vit-base", checkpoint_path=None, gpu_id=3):
         # GPU 설정

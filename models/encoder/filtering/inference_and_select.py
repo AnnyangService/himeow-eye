@@ -9,7 +9,8 @@ from scipy import ndimage
 from typing import List, Dict, Union
 import glob
 
-class OriginVector:
+"""모든 이미지 인코더 통과 후 기준에 따라 점수 판단 및 top 20 채널 선택"""
+class CustomEncoder:
     def __init__(self, model_name="facebook/sam-vit-base", checkpoint_path=None, gpu_id=3,
                  padding_config=None, scoring_config=None):
         # 기본 설정값 정의
@@ -218,7 +219,7 @@ def process_directory(image_dir: str, save_path: str, **kwargs) -> Dict[str, np.
     """
     디렉토리 내의 모든 이미지를 처리하여 특징 벡터를 추출
     """
-    visualizer = OriginVector(**kwargs)
+    visualizer = CustomEncoder(**kwargs)
     
     # 지원하는 이미지 확장자
     image_extensions = ('*.jpg', '*.jpeg', '*.png', '*.bmp')
