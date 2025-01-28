@@ -8,7 +8,7 @@ import glob
 import random
 import sys
 sys.path.append('/home/minelab/desktop/ANN/jojun/himeow-eye')
-from models.encoder.filtering.channel_selection.inference_and_select import CustomEncoder
+from models.encoder.filtering.channel_selection.select import CustomEncoder
 
 def visualize_random_features(input_dir: str, save_dir: str, num_samples: int = 100, **config):
     """
@@ -137,8 +137,8 @@ if __name__ == "__main__":
     }
     
     # 경로 설정
-    input_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/keratitis"
-    save_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/assets/encoder_test/featuremaps"
+    input_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/generated"
+    save_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/assets/encoder_test/featuremaps/generated"
     
     # 시각화 실행
     visualize_random_features(
