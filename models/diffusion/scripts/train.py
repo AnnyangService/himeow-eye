@@ -1,21 +1,24 @@
+from diffusers import DDPMPipeline  # 누락된 DDPMPipeline 임포트
 from accelerate import Accelerator
-from scripts.config import config
 from scripts.evaluate import evaluate
 from tqdm.auto import tqdm
-from pathlib import Path
+
 import os
 import torch
 import torch.nn.functional as F  # F를 torch.nn.functional로 임포트
-from diffusers import DDPMPipeline  # 누락된 DDPMPipeline 임포트
 
 
 def train_loop(config, model, noise_scheduler, optimizer, train_dataloader, lr_scheduler):
-    # Initialize accelerator and tensorboard logging
+    
+    project_dir = os.path.join(config.output_dir, "logs") 
+    os.makedirs(project_dir, exist_ok=True)  # logs 프로젝트 디렉토리 생성
+    
+    #accelerator 초기화
     accelerator = Accelerator(
         mixed_precision=config.mixed_precision,
         gradient_accumulation_steps=config.gradient_accumulation_steps, 
         log_with="tensorboard",
-        project_dir=os.path.join(config.output_dir, "logs")
+        project_dir=project_dir,
     )
     
     # prepare 호출전에 train_dataloader의 길이를

@@ -20,7 +20,6 @@ preprocess = transforms.Compose(
         transforms.RandomVerticalFlip(p=0.3), # 이미지를 상하로 뒤집는 작업, 확률은 0.3
 
         transforms.ToTensor(),
-
         transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5]),
     ]
 )
