@@ -12,9 +12,9 @@ if __name__ == "__main__":
     
     #model 가져오기기
     model = get_model(image_size=config.image_size)
-    
+    #Scheduler 초기화
     noise_scheduler = DDPMScheduler(num_train_timesteps=config.num_train_timestpes) #Scheduler 세팅팅
-    
+    #optimizer 초기화 #Standard AdamW Optimzier 사용    
     optimizer = optim.AdamW(model.parameters(), lr=config.learning_rate) #Standard AdamW Optimzier 사용
     
     #Cosine learning rate schedule  사용, 학습률(lr)을 훈련 과정에서 점진적으로 조정
@@ -25,7 +25,7 @@ if __name__ == "__main__":
 )
     
     args = (config, model, noise_scheduler, optimizer, train_dataloader, lr_scheduler)
-    notebook_launcher(train_loop, args, num_processes=1)
+    notebook_launcher(train_loop, args, num_processes=4)
 
     # train_loop(config, model, noise_scheduler, optimizer, train_dataloader, lr_scheduler)
     # gpt 절대 믿지마 

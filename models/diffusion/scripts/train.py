@@ -37,7 +37,7 @@ def train_loop(config, model, noise_scheduler, optimizer, train_dataloader, lr_s
         for step, batch in enumerate(train_dataloader):
             # print(type(batch), len(batch), batch)
             # break #batch 의 타입을 확인하고 아래  [ ]안에 들어갈 변수를 위한 코드드
-            clean_images = batch["input"]
+            clean_images = batch[0]
             # Sample noise to add to the images
             noise = torch.randn(clean_images.shape).to(clean_images.device)
             
