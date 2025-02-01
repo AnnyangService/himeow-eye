@@ -6,17 +6,34 @@ import sys
 
 # 원본 코드 경로 추가
 sys.path.append('/home/minelab/desktop/ANN/jojun/himeow-eye')
-from models.encoder.filtering.channel_selection.select import CustomEncoder
+from models.encoder.filtering.extract import FeatureExtractor
+from models.encoder.filtering.channel_selection.select import ChannelSelector
 
-def process_directory(image_dir: str, save_path: str, **kwargs) -> Dict[str, np.ndarray]:
+def vectorize_directory(image_dir: str, save_path: str, **kwargs) -> Dict[str, np.ndarray]:
     """
-    디렉토리 내의 모든 이미지를 처리하여 특징 벡터를 추출
+    디렉토리 내의 모든 이미지를 벡터화하여 저장
+    
+    Args:
+        image_dir (str): 이미지가 있는 디렉토리 경로
+        save_path (str): 결과를 저장할 경로
+        **kwargs: 설정값들 (checkpoint_path, gpu_id, padding_config, scoring_config)
+    
+    Returns:
+        Dict[str, np.ndarray]: 이미지 경로를 키로, 특징 벡터를 값으로 하는 딕셔너리
     """
-    visualizer = CustomEncoder(**kwargs)
+    # 특징 추출기와 채널 선택기 초기화
+    extractor = FeatureExtractor(
+        checkpoint_path=kwargs.get('checkpoint_path'),
+        gpu_id=kwargs.get('gpu_id', 3)
+    )
+    
+    selector = ChannelSelector(
+        padding_config=kwargs.get('padding_config'),
+        scoring_config=kwargs.get('scoring_config')
+    )
     
     # 지원하는 이미지 확장자
     image_extensions = ('*.jpg', '*.jpeg', '*.png', '*.bmp')
-    
     results = {}
     
     # 모든 이미지 파일 찾기
@@ -29,10 +46,17 @@ def process_directory(image_dir: str, save_path: str, **kwargs) -> Dict[str, np.
     for i, image_path in enumerate(image_files, 1):
         try:
             # 진행상황 출력 (같은 줄에 업데이트)
-            print(f"\rProcessing image {i}/{len(image_files)}: {os.path.basename(image_path)}", end='', flush=True)
+            print(f"\rProcessing image {i}/{len(image_files)}: {os.path.basename(image_path)}", 
+                  end='', flush=True)
             
-            # 특징 벡터 추출
-            feature_vector = visualizer.extract_feature_vector(image_path)
+            # 1. 특징 추출
+            features = extractor.extract_features(image_path)
+            
+            # 2. 중요 채널 선택
+            selected_features, _ = selector.select_channels(features)
+            
+            # numpy로 변환하여 저장
+            feature_vector = selected_features[0].cpu().numpy()
             
             # 상대 경로로 저장 (키로 사용)
             rel_path = os.path.relpath(image_path, image_dir)
@@ -41,11 +65,11 @@ def process_directory(image_dir: str, save_path: str, **kwargs) -> Dict[str, np.
         except Exception as e:
             print(f"\nError processing {image_path}: {str(e)}")
 
-    # 처리 완료 메시지
-    print("\nFeature extraction completed!")
+    print("\nVectorization completed!")
     
     # 결과 저장
     np.save(save_path, results)
+    print(f"Results saved to {save_path}")
     
     return results
 
@@ -53,6 +77,7 @@ if __name__ == "__main__":
     # 설정
     config = {
         'checkpoint_path': "/home/minelab/desktop/ANN/jojun/himeow-eye/models/encoder/finetuning/custom_models/best_checkpoint.pth",
+        'gpu_id': 3,
         'padding_config': {
             'threshold': 0.7,
             'height_ratio': 10
@@ -70,8 +95,8 @@ if __name__ == "__main__":
     input_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/keratitis"
     output_path = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/vectors/origin.npy"
     
-    # 디렉토리 처리
-    feature_vectors = process_directory(
+    # 벡터화 실행
+    feature_vectors = vectorize_directory(
         image_dir=input_dir,
         save_path=output_path,
         **config

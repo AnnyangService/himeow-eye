@@ -1,18 +1,7 @@
-import torch
-from transformers import SamModel, SamProcessor
-from PIL import Image
-import matplotlib.pyplot as plt
 import numpy as np
-import torch.nn.functional as F
-import os
-from scipy import ndimage
-from typing import List, Dict, Union
-import glob
 
-"""모든 이미지 인코더 통과 후 기준에 따라 점수 판단 및 top 20 채널 선택"""
-class CustomEncoder:
-    def __init__(self, model_name="facebook/sam-vit-base", checkpoint_path=None, gpu_id=3,
-                 padding_config=None, scoring_config=None):
+class ChannelSelector:
+    def __init__(self, padding_config=None, scoring_config=None):
         # 기본 설정값 정의
         self.padding_config = {
             'threshold': 0.8,    # 패딩 판단 임계값
@@ -27,38 +16,8 @@ class CustomEncoder:
             'top_k': 30                  # 선택할 상위 채널 수
         } if scoring_config is None else scoring_config
 
-        # GPU 설정
-        if torch.cuda.is_available():
-            self.device = torch.device(f"cuda:{gpu_id}")
-            print(f"Using GPU {gpu_id}: {torch.cuda.get_device_name(gpu_id)}")
-        else:
-            self.device = torch.device("cpu")
-            print("Using CPU")
-
-        # 모델 로드
-        self.model = SamModel.from_pretrained(model_name)
-        self.processor = SamProcessor.from_pretrained(model_name)
-        
-        if checkpoint_path:
-            self.load_custom_checkpoint(checkpoint_path)
-        
-        self.model = self.model.to(self.device)
-        self.vision_encoder = self.model.vision_encoder
-        self.vision_encoder.eval()
-
-    
-    def load_custom_checkpoint(self, checkpoint_path):
-        """파인튜닝된 sam vision encoder 불러오기기"""
-        checkpoint = torch.load(checkpoint_path, map_location=self.device, weights_only=True)
-        current_state_dict = self.model.state_dict()
-        for name, param in checkpoint['vision_encoder_state_dict'].items():
-            if 'vision_encoder' in name:
-                current_state_dict[name] = param
-        self.model.load_state_dict(current_state_dict)
-        print(f"Loaded custom checkpoint from {checkpoint_path}")
-
     def check_padding_activation(self, channel):
-        """1. 패딩 영역 활성화 체크"""
+        """패딩 영역 활성화 체크"""
         h = channel.shape[0]
         padding_height = h // self.padding_config['height_ratio']
         
@@ -70,7 +29,7 @@ class CustomEncoder:
                (bottom_pad > center * self.padding_config['threshold'])
 
     def calculate_channel_scores(self, features):
-        """2. 채널 스코어 메기기기"""
+        """채널 스코어 계산"""
         scores = []
         padding_excluded = []
         
@@ -104,3 +63,8 @@ class CustomEncoder:
         # 상위 k개 채널 선택
         top_channels = np.argsort(scores)[-self.scoring_config['top_k']:][::-1]
         return top_channels, scores, padding_excluded
+
+    def select_channels(self, features):
+        """특징에서 중요 채널 선택"""
+        top_channels, scores, padding_excluded = self.calculate_channel_scores(features)
+        return features[:, top_channels], top_channels
