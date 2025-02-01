@@ -36,13 +36,26 @@ class FeatureExtractor:
     def extract_features(self, image_path):
         """이미지에서 특징 추출"""
         try:
+            # PIL 이미지로 열기
             image = Image.open(image_path)
-            inputs = self.processor(images=image, return_tensors="pt").to(self.device)
+            
+            # processor 사용 시 명시적 옵션 지정
+            inputs = self.processor(
+                images=image,
+                return_tensors="pt",
+                do_resize=True,
+                size={"longest_edge": 1024},
+                do_normalize=True
+            )
+            
+            # 텐서만 디바이스로 이동
+            inputs = {k: v.to(self.device) if isinstance(v, torch.Tensor) else v 
+                    for k, v in inputs.items()}
             
             with torch.no_grad():
-                features = self.vision_encoder(inputs.pixel_values)
+                features = self.vision_encoder(inputs["pixel_values"])
                 image_embeddings = features.last_hidden_state.contiguous()
-                return image_embeddings.clone() 
+                return image_embeddings.clone()
                 
         except Exception as e:
             print(f"Error in feature extraction for {image_path}: {str(e)}")

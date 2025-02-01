@@ -3,6 +3,7 @@ import glob
 import numpy as np
 from typing import Dict
 import sys
+import torch
 
 # 원본 코드 경로 추가
 sys.path.append('/home/minelab/desktop/ANN/jojun/himeow-eye')
@@ -51,12 +52,25 @@ def vectorize_directory(image_dir: str, save_path: str, **kwargs) -> Dict[str, n
             
             # 1. 특징 추출
             features = extractor.extract_features(image_path)
+            if features is None:
+                print(f"\nSkipping {image_path}: Feature extraction failed")
+                continue
+                
+            # 2. 채널 스코어 계산 및 선택
+            # select_channels 대신 calculate_channel_scores를 사용하여 top_channels 정보를 얻음
+            top_channels, scores, _ = selector.calculate_channel_scores(features)
             
-            # 2. 중요 채널 선택
-            selected_features, _ = selector.select_channels(features)
+            # 3. 선택된 채널들의 특징맵을 numpy로 변환
+            selected_features = np.stack([
+                features[0, idx].cpu().numpy() 
+                for idx in top_channels[:selector.scoring_config['top_k']]
+            ])
             
-            # numpy로 변환하여 저장
-            feature_vector = selected_features[0].cpu().numpy()
+            # 4. 채널 방향으로 평균 계산
+            mean_feature_map = np.mean(selected_features, axis=0)
+            
+            # 5. 특징맵을 1차원 벡터로 변환
+            feature_vector = mean_feature_map.flatten()
             
             # 상대 경로로 저장 (키로 사용)
             rel_path = os.path.relpath(image_path, image_dir)
@@ -72,6 +86,7 @@ def vectorize_directory(image_dir: str, save_path: str, **kwargs) -> Dict[str, n
     print(f"Results saved to {save_path}")
     
     return results
+
 
 if __name__ == "__main__":
     # 설정
@@ -92,8 +107,8 @@ if __name__ == "__main__":
     }
     
     # 입력 디렉토리와 결과 저장 경로 설정
-    input_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/keratitis"
-    output_path = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/vectors/origin.npy"
+    input_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/generated"
+    output_path = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/vectors/generated.npy"
     
     # 벡터화 실행
     feature_vectors = vectorize_directory(
