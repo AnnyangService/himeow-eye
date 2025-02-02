@@ -1,0 +1,13 @@
+Matching Statistics (Similarity Threshold: 0.85)
+==================================================
+
+total_originals: 666
+matched_originals: 508
+unmatched_originals: 158
+total_generated: 1000
+matched_generated: 968
+unmatched_generated: 32
+average_similarity: 0.8962
+min_similarity: 0.8501
+max_similarity: 0.9568
+std_similarity: 0.0243

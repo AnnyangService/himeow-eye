@@ -1,0 +1,5087 @@
+{
+    "threshold": 0.85,
+    "matched": {
+        "crop_C52_11a46ded-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0211.png",
+                "similarity": 0.9169953105332138
+            },
+            {
+                "generated_path": "seed0401.png",
+                "similarity": 0.9161706914352306
+            }
+        ],
+        "crop_C52_11a6475b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0167.png",
+                "similarity": 0.9249041379664793
+            },
+            {
+                "generated_path": "seed0653.png",
+                "similarity": 0.9177451381253764
+            }
+        ],
+        "crop_C4_3e0298db-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0359.png",
+                "similarity": 0.8924973202526464
+            },
+            {
+                "generated_path": "seed0958.png",
+                "similarity": 0.8916318846622696
+            }
+        ],
+        "crop_C40_11943c29-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0936.png",
+                "similarity": 0.8885069509680559
+            },
+            {
+                "generated_path": "seed0562.png",
+                "similarity": 0.8603739183166862
+            }
+        ],
+        "crop_C32_3e0a26e0-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0003.png",
+                "similarity": 0.8976319906105423
+            },
+            {
+                "generated_path": "seed0509.png",
+                "similarity": 0.8911574312029754
+            }
+        ],
+        "crop_C21_100d270e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0293.png",
+                "similarity": 0.9088454752782271
+            },
+            {
+                "generated_path": "seed0758.png",
+                "similarity": 0.9054818271975409
+            }
+        ],
+        "crop_C58_12da65dc-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0724.png",
+                "similarity": 0.9217303677116568
+            },
+            {
+                "generated_path": "seed0085.png",
+                "similarity": 0.9146512073337026
+            }
+        ],
+        "crop_C7_12da1768-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0082.png",
+                "similarity": 0.892539841921488
+            },
+            {
+                "generated_path": "seed0931.png",
+                "similarity": 0.8833034395028816
+            }
+        ],
+        "crop_C1_118ced3d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0696.png",
+                "similarity": 0.8998298875447261
+            },
+            {
+                "generated_path": "seed0026.png",
+                "similarity": 0.8940437471970751
+            }
+        ],
+        "crop_C25_11db556a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0585.png",
+                "similarity": 0.908481137862063
+            },
+            {
+                "generated_path": "seed0524.png",
+                "similarity": 0.9014832316278798
+            }
+        ],
+        "crop_C30_16a7ed67-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0911.png",
+                "similarity": 0.8587341987666858
+            }
+        ],
+        "crop_C3_0ec3b6bc-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0502.png",
+                "similarity": 0.8766935093339605
+            },
+            {
+                "generated_path": "seed0896.png",
+                "similarity": 0.8723515816695989
+            }
+        ],
+        "crop_C59_11aca3da-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0411.png",
+                "similarity": 0.8925389899535279
+            },
+            {
+                "generated_path": "seed0598.png",
+                "similarity": 0.8809679366874237
+            }
+        ],
+        "crop_C26_11ad11b0-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0442.png",
+                "similarity": 0.9056148527508071
+            },
+            {
+                "generated_path": "seed0002.png",
+                "similarity": 0.8941537034891134
+            }
+        ],
+        "crop_C46_3e03055e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0767.png",
+                "similarity": 0.9217683178093932
+            },
+            {
+                "generated_path": "seed0112.png",
+                "similarity": 0.9000923349296645
+            }
+        ],
+        "crop_C55_118d7e48-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0075.png",
+                "similarity": 0.9026618710769804
+            },
+            {
+                "generated_path": "seed0320.png",
+                "similarity": 0.89963027766693
+            }
+        ],
+        "crop_C9_119a3d57-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0292.png",
+                "similarity": 0.8906033001593212
+            },
+            {
+                "generated_path": "seed0707.png",
+                "similarity": 0.8905720380250376
+            }
+        ],
+        "crop_C16_11b05453-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0736.png",
+                "similarity": 0.9378904239792456
+            },
+            {
+                "generated_path": "seed0723.png",
+                "similarity": 0.9377986047982082
+            }
+        ],
+        "crop_C7_11a5ae67-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0258.png",
+                "similarity": 0.9486540553026571
+            },
+            {
+                "generated_path": "seed0357.png",
+                "similarity": 0.92974225529128
+            }
+        ],
+        "crop_C2_100cda14-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0567.png",
+                "similarity": 0.9259939788428674
+            },
+            {
+                "generated_path": "seed0412.png",
+                "similarity": 0.9225335476997341
+            }
+        ],
+        "crop_C17_118e5851-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0029.png",
+                "similarity": 0.9165766491767903
+            },
+            {
+                "generated_path": "seed0689.png",
+                "similarity": 0.9163938835760971
+            }
+        ],
+        "crop_C12_11a61b09-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0857.png",
+                "similarity": 0.9436311409437184
+            },
+            {
+                "generated_path": "seed0865.png",
+                "similarity": 0.9346693334486386
+            }
+        ],
+        "crop_C12_16a059d7-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0726.png",
+                "similarity": 0.9370445006931372
+            },
+            {
+                "generated_path": "seed0521.png",
+                "similarity": 0.9280498719037628
+            }
+        ],
+        "crop_C26_11c7df6f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0986.png",
+                "similarity": 0.9426363639441898
+            },
+            {
+                "generated_path": "seed0859.png",
+                "similarity": 0.9246518070201226
+            }
+        ],
+        "crop_C4_11eb4c05-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0713.png",
+                "similarity": 0.9385459093305096
+            },
+            {
+                "generated_path": "seed0572.png",
+                "similarity": 0.9143777238442464
+            }
+        ],
+        "crop_C38_11ad98cc-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0545.png",
+                "similarity": 0.9195336688413077
+            },
+            {
+                "generated_path": "seed0234.png",
+                "similarity": 0.910943220340837
+            }
+        ],
+        "crop_C0_3e3d14da-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0278.png",
+                "similarity": 0.9375528760820003
+            },
+            {
+                "generated_path": "seed0269.png",
+                "similarity": 0.9336700524725462
+            }
+        ],
+        "crop_C28_11eade63-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0037.png",
+                "similarity": 0.8661893857084517
+            },
+            {
+                "generated_path": "seed0803.png",
+                "similarity": 0.866115591931422
+            }
+        ],
+        "crop_C20_11de53bd-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0843.png",
+                "similarity": 0.9224768033539156
+            },
+            {
+                "generated_path": "seed0047.png",
+                "similarity": 0.9186162741347575
+            }
+        ],
+        "crop_C30_11c9dbf2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0838.png",
+                "similarity": 0.9187309692443711
+            },
+            {
+                "generated_path": "seed0100.png",
+                "similarity": 0.9166358459859831
+            }
+        ],
+        "crop_C43_11a4cce2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0965.png",
+                "similarity": 0.9554348579451086
+            },
+            {
+                "generated_path": "seed0066.png",
+                "similarity": 0.9472818314329957
+            }
+        ],
+        "crop_C28_11a36547-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0043.png",
+                "similarity": 0.9282660933823416
+            },
+            {
+                "generated_path": "seed0462.png",
+                "similarity": 0.9227951953105156
+            }
+        ],
+        "crop_C42_11eaa900-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0788.png",
+                "similarity": 0.888635570453973
+            },
+            {
+                "generated_path": "seed0968.png",
+                "similarity": 0.8781316759055864
+            }
+        ],
+        "crop_C43_11c1ddb5-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0328.png",
+                "similarity": 0.9503902342734013
+            },
+            {
+                "generated_path": "seed0709.png",
+                "similarity": 0.921471990076453
+            }
+        ],
+        "crop_C37_11b2ab62-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0584.png",
+                "similarity": 0.8858774663946286
+            },
+            {
+                "generated_path": "seed0957.png",
+                "similarity": 0.8742560614493347
+            }
+        ],
+        "crop_C50_11c83cc8-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0330.png",
+                "similarity": 0.9416750003753934
+            },
+            {
+                "generated_path": "seed0750.png",
+                "similarity": 0.9395048983716364
+            }
+        ],
+        "crop_C12_11a6144f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0302.png",
+                "similarity": 0.9513892472662681
+            },
+            {
+                "generated_path": "seed0325.png",
+                "similarity": 0.9449786480550809
+            }
+        ],
+        "crop_C10_11ddd760-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0972.png",
+                "similarity": 0.9223736564460401
+            },
+            {
+                "generated_path": "seed0149.png",
+                "similarity": 0.919055596310728
+            }
+        ],
+        "crop_C18_11afff85-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0322.png",
+                "similarity": 0.9392017329988386
+            },
+            {
+                "generated_path": "seed0151.png",
+                "similarity": 0.9286858142688266
+            }
+        ],
+        "crop_C12_3e0a4609-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0217.png",
+                "similarity": 0.9292808006548928
+            },
+            {
+                "generated_path": "seed0804.png",
+                "similarity": 0.9149484426798176
+            }
+        ],
+        "crop_C12_3e087951-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0748.png",
+                "similarity": 0.898389062509111
+            },
+            {
+                "generated_path": "seed0025.png",
+                "similarity": 0.8706307495239292
+            }
+        ],
+        "crop_C4_11afb11a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0119.png",
+                "similarity": 0.9063407945022242
+            },
+            {
+                "generated_path": "seed0565.png",
+                "similarity": 0.9048840820644022
+            }
+        ],
+        "crop_C49_11eabe14-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0384.png",
+                "similarity": 0.9136022509595192
+            },
+            {
+                "generated_path": "seed0849.png",
+                "similarity": 0.9126049837763693
+            }
+        ],
+        "crop_C46_11a39f7d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0496.png",
+                "similarity": 0.9025966259529188
+            },
+            {
+                "generated_path": "seed0749.png",
+                "similarity": 0.9009348161607145
+            }
+        ],
+        "crop_C52_11aabc46-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0817.png",
+                "similarity": 0.8952644169114957
+            },
+            {
+                "generated_path": "seed0219.png",
+                "similarity": 0.8835886953679752
+            }
+        ],
+        "crop_C38_16d01a04-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0038.png",
+                "similarity": 0.8861761169396926
+            },
+            {
+                "generated_path": "seed0218.png",
+                "similarity": 0.8650519657432602
+            }
+        ],
+        "crop_C17_169fa144-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0793.png",
+                "similarity": 0.8710353044001836
+            },
+            {
+                "generated_path": "seed0392.png",
+                "similarity": 0.8697037881614047
+            }
+        ],
+        "crop_C21_0ec3ab2c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0539.png",
+                "similarity": 0.905170108006784
+            },
+            {
+                "generated_path": "seed0212.png",
+                "similarity": 0.8587689035309626
+            }
+        ],
+        "crop_C35_11bb6390-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0129.png",
+                "similarity": 0.8730218908143821
+            },
+            {
+                "generated_path": "seed0087.png",
+                "similarity": 0.8529421771855258
+            }
+        ],
+        "crop_C44_1a440cfd-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0176.png",
+                "similarity": 0.9299221143676497
+            },
+            {
+                "generated_path": "seed0360.png",
+                "similarity": 0.9103811686642754
+            }
+        ],
+        "crop_C1_11c9d70f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0343.png",
+                "similarity": 0.9222073134871721
+            },
+            {
+                "generated_path": "seed0651.png",
+                "similarity": 0.9165686148805741
+            }
+        ],
+        "crop_C0_11afb9a1-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0097.png",
+                "similarity": 0.9328949733293772
+            },
+            {
+                "generated_path": "seed0161.png",
+                "similarity": 0.9258728851695565
+            }
+        ],
+        "crop_C7_11ec3fd9-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0285.png",
+                "similarity": 0.9269260670496108
+            },
+            {
+                "generated_path": "seed0198.png",
+                "similarity": 0.9236048222849047
+            }
+        ],
+        "crop_C23_11b0188a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0484.png",
+                "similarity": 0.899139786123804
+            },
+            {
+                "generated_path": "seed0757.png",
+                "similarity": 0.8953722722515468
+            }
+        ],
+        "crop_C54_11a4472e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0253.png",
+                "similarity": 0.9337055140028421
+            },
+            {
+                "generated_path": "seed0007.png",
+                "similarity": 0.9269571923187053
+            }
+        ],
+        "crop_C48_11bb0270-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0516.png",
+                "similarity": 0.9332712429538635
+            },
+            {
+                "generated_path": "seed0342.png",
+                "similarity": 0.9306099189066085
+            }
+        ],
+        "crop_C56_11a34f52-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0862.png",
+                "similarity": 0.9062791410995044
+            },
+            {
+                "generated_path": "seed0720.png",
+                "similarity": 0.8919512829408068
+            }
+        ],
+        "crop_C17_11b2cfe9-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0582.png",
+                "similarity": 0.9255094970190204
+            },
+            {
+                "generated_path": "seed0031.png",
+                "similarity": 0.9185675464697897
+            }
+        ],
+        "crop_C17_11c766a1-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0081.png",
+                "similarity": 0.9292641436628352
+            },
+            {
+                "generated_path": "seed0395.png",
+                "similarity": 0.9233516224024725
+            }
+        ],
+        "crop_C47_11b3035b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0632.png",
+                "similarity": 0.9309155123560999
+            },
+            {
+                "generated_path": "seed0969.png",
+                "similarity": 0.9264075146188349
+            }
+        ],
+        "crop_C17_100d23a0-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0694.png",
+                "similarity": 0.9382211345681624
+            },
+            {
+                "generated_path": "seed0937.png",
+                "similarity": 0.9212306981390601
+            }
+        ],
+        "crop_C55_118df011-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0485.png",
+                "similarity": 0.8753598974960684
+            },
+            {
+                "generated_path": "seed0647.png",
+                "similarity": 0.8701428731432979
+            }
+        ],
+        "crop_C12_16d8637d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0834.png",
+                "similarity": 0.8748022300481727
+            },
+            {
+                "generated_path": "seed0897.png",
+                "similarity": 0.8743373888812223
+            }
+        ],
+        "crop_C44_11b33aae-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0558.png",
+                "similarity": 0.9501970242569495
+            },
+            {
+                "generated_path": "seed0420.png",
+                "similarity": 0.9387117771982909
+            }
+        ],
+        "crop_C49_11c7e7f1-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0628.png",
+                "similarity": 0.945484359841622
+            },
+            {
+                "generated_path": "seed0702.png",
+                "similarity": 0.930821513597776
+            }
+        ],
+        "crop_C18_118c10a8-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0519.png",
+                "similarity": 0.8682725008643364
+            }
+        ],
+        "crop_C53_11eb2d7c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0415.png",
+                "similarity": 0.9114262389480771
+            },
+            {
+                "generated_path": "seed0011.png",
+                "similarity": 0.9046349225828362
+            }
+        ],
+        "crop_C4_3e022e01-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0107.png",
+                "similarity": 0.944306530509073
+            },
+            {
+                "generated_path": "seed0356.png",
+                "similarity": 0.9333533594075188
+            }
+        ],
+        "crop_C56_11c192f7-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0903.png",
+                "similarity": 0.9220739387738576
+            },
+            {
+                "generated_path": "seed0144.png",
+                "similarity": 0.8770499322598897
+            }
+        ],
+        "crop_C14_3e031b00-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0603.png",
+                "similarity": 0.9118097544056245
+            },
+            {
+                "generated_path": "seed0399.png",
+                "similarity": 0.9078652440295195
+            }
+        ],
+        "crop_C38_0ec3bd10-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0699.png",
+                "similarity": 0.8781431097549036
+            },
+            {
+                "generated_path": "seed0493.png",
+                "similarity": 0.8583762781154153
+            }
+        ],
+        "crop_C33_100c68ef-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0616.png",
+                "similarity": 0.9200554358997621
+            },
+            {
+                "generated_path": "seed0784.png",
+                "similarity": 0.9121958650778785
+            }
+        ],
+        "crop_C25_11a5433d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0563.png",
+                "similarity": 0.8959059661198486
+            },
+            {
+                "generated_path": "seed0733.png",
+                "similarity": 0.8950905455786281
+            }
+        ],
+        "crop_C51_16bf7e29-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0495.png",
+                "similarity": 0.9127544936550693
+            },
+            {
+                "generated_path": "seed0196.png",
+                "similarity": 0.9087357279206283
+            }
+        ],
+        "crop_C28_3e077c7e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0156.png",
+                "similarity": 0.9239858397674985
+            },
+            {
+                "generated_path": "seed0841.png",
+                "similarity": 0.9188665378889959
+            }
+        ],
+        "crop_C48_119a8816-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0886.png",
+                "similarity": 0.8959860571358411
+            },
+            {
+                "generated_path": "seed0541.png",
+                "similarity": 0.8867394649005321
+            }
+        ],
+        "crop_C1_3e02245f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0830.png",
+                "similarity": 0.9378877966812922
+            },
+            {
+                "generated_path": "seed0861.png",
+                "similarity": 0.9352464488461417
+            }
+        ],
+        "crop_C49_100de327-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0645.png",
+                "similarity": 0.9280543836668665
+            },
+            {
+                "generated_path": "seed0622.png",
+                "similarity": 0.9255502439508175
+            }
+        ],
+        "crop_C23_11ebd6da-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0463.png",
+                "similarity": 0.8861772681527048
+            },
+            {
+                "generated_path": "seed0268.png",
+                "similarity": 0.8773286287802801
+            }
+        ],
+        "crop_C26_118de77e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0600.png",
+                "similarity": 0.9036202579132804
+            },
+            {
+                "generated_path": "seed0347.png",
+                "similarity": 0.9025655808941092
+            }
+        ],
+        "crop_C20_169f924f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0228.png",
+                "similarity": 0.8827898752497431
+            },
+            {
+                "generated_path": "seed0916.png",
+                "similarity": 0.8815921767450918
+            }
+        ],
+        "crop_C34_3e06ef98-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0714.png",
+                "similarity": 0.8627123055706599
+            },
+            {
+                "generated_path": "seed0727.png",
+                "similarity": 0.8601201050926098
+            }
+        ],
+        "crop_C9_11b3157a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0691.png",
+                "similarity": 0.9302341305994214
+            },
+            {
+                "generated_path": "seed0875.png",
+                "similarity": 0.9265856206960568
+            }
+        ],
+        "crop_C30_3e02f628-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0614.png",
+                "similarity": 0.9038187505240862
+            },
+            {
+                "generated_path": "seed0873.png",
+                "similarity": 0.8935373214550528
+            }
+        ],
+        "crop_C23_11add4d3-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0283.png",
+                "similarity": 0.8847101751151798
+            },
+            {
+                "generated_path": "seed0465.png",
+                "similarity": 0.8827125585821879
+            }
+        ],
+        "crop_C28_11aa8804-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0615.png",
+                "similarity": 0.9195035301577106
+            },
+            {
+                "generated_path": "seed0326.png",
+                "similarity": 0.9130374302797262
+            }
+        ],
+        "crop_C52_11baf55d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0114.png",
+                "similarity": 0.9435338986435359
+            },
+            {
+                "generated_path": "seed0570.png",
+                "similarity": 0.9294831895228512
+            }
+        ],
+        "crop_C21_11ab4465-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0067.png",
+                "similarity": 0.9143352165421851
+            },
+            {
+                "generated_path": "seed0894.png",
+                "similarity": 0.9137734108878466
+            }
+        ],
+        "crop_C31_11b2d473-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0876.png",
+                "similarity": 0.9194499967111455
+            },
+            {
+                "generated_path": "seed0200.png",
+                "similarity": 0.8856333173970488
+            }
+        ],
+        "crop_C42_119409d6-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0365.png",
+                "similarity": 0.8956374232791808
+            },
+            {
+                "generated_path": "seed0259.png",
+                "similarity": 0.8800260996085302
+            }
+        ],
+        "crop_C15_11de2556-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0807.png",
+                "similarity": 0.8504023477970312
+            }
+        ],
+        "crop_C9_11c8169d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0554.png",
+                "similarity": 0.9179581909145115
+            },
+            {
+                "generated_path": "seed0136.png",
+                "similarity": 0.9152081432306807
+            }
+        ],
+        "crop_C49_118ebab4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0825.png",
+                "similarity": 0.8881017593009133
+            },
+            {
+                "generated_path": "seed0155.png",
+                "similarity": 0.8810170487227349
+            }
+        ],
+        "crop_C25_16c9e3a3-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0069.png",
+                "similarity": 0.8615388111630085
+            },
+            {
+                "generated_path": "seed0474.png",
+                "similarity": 0.8615314206504423
+            }
+        ],
+        "crop_C46_16df3de7-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0294.png",
+                "similarity": 0.9485166528136667
+            },
+            {
+                "generated_path": "seed0090.png",
+                "similarity": 0.9473699518177063
+            }
+        ],
+        "crop_C5_100c78ef-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0659.png",
+                "similarity": 0.8908693034138199
+            },
+            {
+                "generated_path": "seed0245.png",
+                "similarity": 0.8821747548754801
+            }
+        ],
+        "crop_C51_11ec0c37-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0525.png",
+                "similarity": 0.9070096824524951
+            },
+            {
+                "generated_path": "seed0279.png",
+                "similarity": 0.9063331410250431
+            }
+        ],
+        "crop_C24_11a30da6-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0072.png",
+                "similarity": 0.9568233830961427
+            },
+            {
+                "generated_path": "seed0589.png",
+                "similarity": 0.9183769908648374
+            }
+        ],
+        "crop_C42_11adcbdd-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0475.png",
+                "similarity": 0.8774026167668992
+            },
+            {
+                "generated_path": "seed0300.png",
+                "similarity": 0.8742375381633789
+            }
+        ],
+        "crop_C20_11c81b05-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0481.png",
+                "similarity": 0.9384302809404304
+            },
+            {
+                "generated_path": "seed0769.png",
+                "similarity": 0.9362945562110812
+            }
+        ],
+        "crop_C15_11a49906-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0202.png",
+                "similarity": 0.8748107446377489
+            },
+            {
+                "generated_path": "seed0705.png",
+                "similarity": 0.8600669459141437
+            }
+        ],
+        "crop_C42_3e04a81a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0933.png",
+                "similarity": 0.9341072262773444
+            },
+            {
+                "generated_path": "seed0583.png",
+                "similarity": 0.9297176139561221
+            }
+        ],
+        "crop_C57_100c9b60-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0427.png",
+                "similarity": 0.9028640982463241
+            },
+            {
+                "generated_path": "seed0057.png",
+                "similarity": 0.8803344067415916
+            }
+        ],
+        "crop_C46_11baebcd-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0264.png",
+                "similarity": 0.9081300204941146
+            },
+            {
+                "generated_path": "seed0813.png",
+                "similarity": 0.9058093020856598
+            }
+        ],
+        "crop_C1_11b36da0-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0154.png",
+                "similarity": 0.882501493515654
+            },
+            {
+                "generated_path": "seed0505.png",
+                "similarity": 0.8777724218682241
+            }
+        ],
+        "crop_C56_0ec3b3cc-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0459.png",
+                "similarity": 0.910453637800509
+            },
+            {
+                "generated_path": "seed0482.png",
+                "similarity": 0.9045891694294875
+            }
+        ],
+        "crop_C2_100ca215-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0020.png",
+                "similarity": 0.8915016947880042
+            },
+            {
+                "generated_path": "seed0093.png",
+                "similarity": 0.8563346349992265
+            }
+        ],
+        "crop_C29_3e38082e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0101.png",
+                "similarity": 0.9271284775517803
+            },
+            {
+                "generated_path": "seed0930.png",
+                "similarity": 0.9017591676001022
+            }
+        ],
+        "crop_C17_3e039dc2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0776.png",
+                "similarity": 0.9135182505031519
+            },
+            {
+                "generated_path": "seed0183.png",
+                "similarity": 0.909998282074755
+            }
+        ],
+        "crop_C46_12da6ba0-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0559.png",
+                "similarity": 0.9130255351252549
+            },
+            {
+                "generated_path": "seed0027.png",
+                "similarity": 0.9091727630213201
+            }
+        ],
+        "crop_C56_16d1ba26-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0116.png",
+                "similarity": 0.954501004866662
+            },
+            {
+                "generated_path": "seed0590.png",
+                "similarity": 0.9544753172600031
+            }
+        ],
+        "crop_C17_10e95148-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0239.png",
+                "similarity": 0.88958851508697
+            },
+            {
+                "generated_path": "seed0667.png",
+                "similarity": 0.875521063840106
+            }
+        ],
+        "crop_C10_16b9c452-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0310.png",
+                "similarity": 0.9342408628223974
+            },
+            {
+                "generated_path": "seed0088.png",
+                "similarity": 0.9255792126212131
+            }
+        ],
+        "crop_C51_3e037222-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0997.png",
+                "similarity": 0.9158842944041687
+            },
+            {
+                "generated_path": "seed0674.png",
+                "similarity": 0.9022106603117179
+            }
+        ],
+        "crop_C33_12da585b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0276.png",
+                "similarity": 0.8982544595293803
+            },
+            {
+                "generated_path": "seed0051.png",
+                "similarity": 0.8963367150387208
+            }
+        ],
+        "crop_C20_11a47a14-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0277.png",
+                "similarity": 0.883606093552017
+            },
+            {
+                "generated_path": "seed0754.png",
+                "similarity": 0.877335735611553
+            }
+        ],
+        "crop_C21_3e020f9d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0904.png",
+                "similarity": 0.8975144368334584
+            },
+            {
+                "generated_path": "seed0967.png",
+                "similarity": 0.8697129299423942
+            }
+        ],
+        "crop_C2_118e4b60-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0476.png",
+                "similarity": 0.885356255280656
+            },
+            {
+                "generated_path": "seed0888.png",
+                "similarity": 0.8760604939737973
+            }
+        ],
+        "crop_C1_3e3689f9-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0235.png",
+                "similarity": 0.9192441388425959
+            },
+            {
+                "generated_path": "seed0363.png",
+                "similarity": 0.9070080887003741
+            }
+        ],
+        "crop_C3_100d800c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0185.png",
+                "similarity": 0.9478591346063954
+            },
+            {
+                "generated_path": "seed0635.png",
+                "similarity": 0.9243829034309983
+            }
+        ],
+        "crop_C26_3e758b52-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0192.png",
+                "similarity": 0.9185164238698643
+            },
+            {
+                "generated_path": "seed0030.png",
+                "similarity": 0.9178980495106362
+            }
+        ],
+        "crop_C14_118debec-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0178.png",
+                "similarity": 0.9087505397751305
+            },
+            {
+                "generated_path": "seed0291.png",
+                "similarity": 0.9061434628407589
+            }
+        ],
+        "crop_C14_11b058b7-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0535.png",
+                "similarity": 0.9069483604429439
+            },
+            {
+                "generated_path": "seed0662.png",
+                "similarity": 0.8845979769201583
+            }
+        ],
+        "crop_C36_3e0317e4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0024.png",
+                "similarity": 0.9313784802327627
+            },
+            {
+                "generated_path": "seed0354.png",
+                "similarity": 0.9227684953849451
+            }
+        ],
+        "crop_C32_118ec94c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0941.png",
+                "similarity": 0.9266660609619904
+            },
+            {
+                "generated_path": "seed0671.png",
+                "similarity": 0.9203187369050576
+            }
+        ],
+        "crop_C6_11abc241-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0816.png",
+                "similarity": 0.9036167210298008
+            },
+            {
+                "generated_path": "seed0250.png",
+                "similarity": 0.8980541808069702
+            }
+        ],
+        "crop_C19_11a9b6a7-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0799.png",
+                "similarity": 0.9289352376688346
+            },
+            {
+                "generated_path": "seed0564.png",
+                "similarity": 0.9026861928051442
+            }
+        ],
+        "crop_C20_11c9f67a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0317.png",
+                "similarity": 0.8891279627189039
+            },
+            {
+                "generated_path": "seed0284.png",
+                "similarity": 0.8609052477941124
+            }
+        ],
+        "crop_C45_3e073d0c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0080.png",
+                "similarity": 0.9325140069608726
+            },
+            {
+                "generated_path": "seed0094.png",
+                "similarity": 0.9276514373012521
+            }
+        ],
+        "crop_C26_169f9740-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0738.png",
+                "similarity": 0.9152252106780914
+            },
+            {
+                "generated_path": "seed0150.png",
+                "similarity": 0.8899046505183971
+            }
+        ],
+        "crop_C58_11a4b64f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0201.png",
+                "similarity": 0.9053652776219487
+            },
+            {
+                "generated_path": "seed0994.png",
+                "similarity": 0.8957474774706873
+            }
+        ],
+        "crop_C42_11a49239-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0892.png",
+                "similarity": 0.9467601136909316
+            },
+            {
+                "generated_path": "seed0561.png",
+                "similarity": 0.9334318049005407
+            }
+        ],
+        "crop_C16_3e0a23e6-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0303.png",
+                "similarity": 0.8886122442161607
+            },
+            {
+                "generated_path": "seed0824.png",
+                "similarity": 0.8781284755709364
+            }
+        ],
+        "crop_C49_169f82a2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0449.png",
+                "similarity": 0.8873632781334463
+            },
+            {
+                "generated_path": "seed0158.png",
+                "similarity": 0.8744214774897028
+            }
+        ],
+        "crop_C26_11aaf5eb-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0620.png",
+                "similarity": 0.9129188580840268
+            },
+            {
+                "generated_path": "seed0410.png",
+                "similarity": 0.885788843216404
+            }
+        ],
+        "crop_C2_11ad8ede-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0120.png",
+                "similarity": 0.9499747743936837
+            },
+            {
+                "generated_path": "seed0639.png",
+                "similarity": 0.9394642898277524
+            }
+        ],
+        "crop_C3_100de610-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0872.png",
+                "similarity": 0.9259472648383879
+            },
+            {
+                "generated_path": "seed0575.png",
+                "similarity": 0.9220914422843257
+            }
+        ],
+        "crop_C23_118c98ac-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0441.png",
+                "similarity": 0.8656432448236095
+            },
+            {
+                "generated_path": "seed0790.png",
+                "similarity": 0.860373045389834
+            }
+        ],
+        "crop_C48_11c1eae0-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0333.png",
+                "similarity": 0.9059071233636982
+            },
+            {
+                "generated_path": "seed0883.png",
+                "similarity": 0.902951706028571
+            }
+        ],
+        "crop_C7_0ec3ae11-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0928.png",
+                "similarity": 0.8889905510729237
+            },
+            {
+                "generated_path": "seed0858.png",
+                "similarity": 0.8844106852311224
+            }
+        ],
+        "crop_C3_3e367436-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0213.png",
+                "similarity": 0.8783483493010159
+            },
+            {
+                "generated_path": "seed0086.png",
+                "similarity": 0.8708683718863007
+            }
+        ],
+        "crop_C57_119ad4e7-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0700.png",
+                "similarity": 0.9162227831112014
+            },
+            {
+                "generated_path": "seed0552.png",
+                "similarity": 0.9098366921768278
+            }
+        ],
+        "crop_C20_118e61b4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0469.png",
+                "similarity": 0.9218026805208881
+            },
+            {
+                "generated_path": "seed0271.png",
+                "similarity": 0.9153542482142342
+            }
+        ],
+        "crop_C20_11c829b0-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0177.png",
+                "similarity": 0.9228460785102068
+            },
+            {
+                "generated_path": "seed0978.png",
+                "similarity": 0.9162443678041219
+            }
+        ],
+        "crop_C14_118d68db-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0316.png",
+                "similarity": 0.9254227942316492
+            },
+            {
+                "generated_path": "seed0236.png",
+                "similarity": 0.9218331510328953
+            }
+        ],
+        "crop_C42_118c9ce7-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0370.png",
+                "similarity": 0.9218834948934383
+            },
+            {
+                "generated_path": "seed0902.png",
+                "similarity": 0.9114276779484389
+            }
+        ],
+        "crop_C27_11c7166b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0899.png",
+                "similarity": 0.930814126497506
+            },
+            {
+                "generated_path": "seed0970.png",
+                "similarity": 0.9147024587252254
+            }
+        ],
+        "crop_C19_11b2dd26-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0954.png",
+                "similarity": 0.9115251893810554
+            },
+            {
+                "generated_path": "seed0329.png",
+                "similarity": 0.9057789459630184
+            }
+        ],
+        "crop_C49_16bffdef-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0443.png",
+                "similarity": 0.9045598472077268
+            },
+            {
+                "generated_path": "seed0160.png",
+                "similarity": 0.8980952043748963
+            }
+        ],
+        "crop_C27_11c1858c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0920.png",
+                "similarity": 0.9024257924363142
+            },
+            {
+                "generated_path": "seed0272.png",
+                "similarity": 0.8931824276807088
+            }
+        ],
+        "crop_C33_11a561f2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed1000.png",
+                "similarity": 0.9322847773628451
+            },
+            {
+                "generated_path": "seed0503.png",
+                "similarity": 0.9183407779412164
+            }
+        ],
+        "crop_C10_11d33e31-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0529.png",
+                "similarity": 0.9066495133834264
+            },
+            {
+                "generated_path": "seed0400.png",
+                "similarity": 0.9036389919864363
+            }
+        ],
+        "crop_C19_11ddfe0e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0467.png",
+                "similarity": 0.9250837261185413
+            },
+            {
+                "generated_path": "seed0070.png",
+                "similarity": 0.9178990557872108
+            }
+        ],
+        "crop_C41_3e025e96-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0180.png",
+                "similarity": 0.8970533575658309
+            },
+            {
+                "generated_path": "seed0870.png",
+                "similarity": 0.8933379835829734
+            }
+        ],
+        "crop_C24_118c8bde-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0759.png",
+                "similarity": 0.8922316056027898
+            },
+            {
+                "generated_path": "seed0095.png",
+                "similarity": 0.8863112114290757
+            }
+        ],
+        "crop_C33_3e75be45-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0098.png",
+                "similarity": 0.8707896157482949
+            },
+            {
+                "generated_path": "seed0895.png",
+                "similarity": 0.8622905355196115
+            }
+        ],
+        "crop_C28_11b2afea-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0084.png",
+                "similarity": 0.8751139427125645
+            },
+            {
+                "generated_path": "seed0209.png",
+                "similarity": 0.8695066065827978
+            }
+        ],
+        "crop_C17_100b6224-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0287.png",
+                "similarity": 0.8861615447458463
+            },
+            {
+                "generated_path": "seed0344.png",
+                "similarity": 0.8745313846106118
+            }
+        ],
+        "crop_C49_12dab50c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0014.png",
+                "similarity": 0.906583202274976
+            },
+            {
+                "generated_path": "seed0226.png",
+                "similarity": 0.8938183969499085
+            }
+        ],
+        "crop_C5_3e085e4f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0846.png",
+                "similarity": 0.899227084125943
+            },
+            {
+                "generated_path": "seed0712.png",
+                "similarity": 0.8959403833051344
+            }
+        ],
+        "crop_C27_100d82f6-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0704.png",
+                "similarity": 0.9037274597546365
+            },
+            {
+                "generated_path": "seed0421.png",
+                "similarity": 0.8965924850140939
+            }
+        ],
+        "crop_C14_0ec3a83d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0071.png",
+                "similarity": 0.9090842450597061
+            },
+            {
+                "generated_path": "seed0568.png",
+                "similarity": 0.8905701318143373
+            }
+        ],
+        "crop_C28_118c70c4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0832.png",
+                "similarity": 0.8688951746917097
+            },
+            {
+                "generated_path": "seed0995.png",
+                "similarity": 0.8620523674666877
+            }
+        ],
+        "crop_C51_16b9b1ff-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0248.png",
+                "similarity": 0.9325372017983536
+            },
+            {
+                "generated_path": "seed0171.png",
+                "similarity": 0.9185737481953578
+            }
+        ],
+        "crop_C28_11c236c0-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0023.png",
+                "similarity": 0.9372339025203401
+            },
+            {
+                "generated_path": "seed0630.png",
+                "similarity": 0.9176512809737263
+            }
+        ],
+        "crop_C41_100c6304-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0950.png",
+                "similarity": 0.8983007896461349
+            },
+            {
+                "generated_path": "seed0464.png",
+                "similarity": 0.8958129658682078
+            }
+        ],
+        "crop_C35_3df7fa16-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0199.png",
+                "similarity": 0.8680456483672391
+            },
+            {
+                "generated_path": "seed0952.png",
+                "similarity": 0.8560621662226884
+            }
+        ],
+        "crop_C20_1a441635-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0909.png",
+                "similarity": 0.9176044055096026
+            },
+            {
+                "generated_path": "seed0106.png",
+                "similarity": 0.9169368472208794
+            }
+        ],
+        "crop_C15_11a5579a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0394.png",
+                "similarity": 0.9176697663887482
+            },
+            {
+                "generated_path": "seed0942.png",
+                "similarity": 0.9031862070365572
+            }
+        ],
+        "crop_C2_16db6887-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0867.png",
+                "similarity": 0.9048524906393496
+            },
+            {
+                "generated_path": "seed0542.png",
+                "similarity": 0.9038564050536082
+            }
+        ],
+        "crop_C35_11db1992-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0105.png",
+                "similarity": 0.9293439573664349
+            },
+            {
+                "generated_path": "seed0666.png",
+                "similarity": 0.9282352737038695
+            }
+        ],
+        "crop_C0_11b331f1-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0966.png",
+                "similarity": 0.9154571843861118
+            },
+            {
+                "generated_path": "seed0074.png",
+                "similarity": 0.9122920582941924
+            }
+        ],
+        "crop_C10_11af95a4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0188.png",
+                "similarity": 0.923505816702331
+            },
+            {
+                "generated_path": "seed0501.png",
+                "similarity": 0.9104147628413453
+            }
+        ],
+        "crop_C45_3e367ab9-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0280.png",
+                "similarity": 0.9309046664012969
+            },
+            {
+                "generated_path": "seed0117.png",
+                "similarity": 0.9262047440451486
+            }
+        ],
+        "crop_C27_11eb28cd-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0013.png",
+                "similarity": 0.9488490107374826
+            },
+            {
+                "generated_path": "seed0159.png",
+                "similarity": 0.9385025300520216
+            }
+        ],
+        "crop_C27_11940052-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0404.png",
+                "similarity": 0.875979441690545
+            },
+            {
+                "generated_path": "seed0621.png",
+                "similarity": 0.8644294905464666
+            }
+        ],
+        "crop_C44_11de1c4f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0695.png",
+                "similarity": 0.8759399719599613
+            },
+            {
+                "generated_path": "seed0577.png",
+                "similarity": 0.8718694956198703
+            }
+        ],
+        "crop_C8_100c6f58-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0019.png",
+                "similarity": 0.9345005953868554
+            },
+            {
+                "generated_path": "seed0923.png",
+                "similarity": 0.924352255446844
+            }
+        ],
+        "crop_C47_119a5466-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0163.png",
+                "similarity": 0.8981923595278335
+            },
+            {
+                "generated_path": "seed0127.png",
+                "similarity": 0.88516318166752
+            }
+        ],
+        "crop_C2_11afacc2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0256.png",
+                "similarity": 0.8922301420379253
+            },
+            {
+                "generated_path": "seed0111.png",
+                "similarity": 0.8793903119077726
+            }
+        ],
+        "crop_C42_11ca25b1-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0845.png",
+                "similarity": 0.9474179371340468
+            },
+            {
+                "generated_path": "seed0988.png",
+                "similarity": 0.9382095071328
+            }
+        ],
+        "crop_C2_100df1c1-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0313.png",
+                "similarity": 0.8922691574879599
+            }
+        ],
+        "crop_C58_11c76171-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0744.png",
+                "similarity": 0.939185138989994
+            },
+            {
+                "generated_path": "seed0607.png",
+                "similarity": 0.9381825273104492
+            }
+        ],
+        "crop_C10_16bef475-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0436.png",
+                "similarity": 0.8871708553600763
+            },
+            {
+                "generated_path": "seed0805.png",
+                "similarity": 0.8848888063016052
+            }
+        ],
+        "crop_C7_11945cc5-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0848.png",
+                "similarity": 0.9242301394423497
+            },
+            {
+                "generated_path": "seed0077.png",
+                "similarity": 0.8949586275832745
+            }
+        ],
+        "crop_C0_11bbeb4e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0874.png",
+                "similarity": 0.9002136795136116
+            },
+            {
+                "generated_path": "seed0028.png",
+                "similarity": 0.8958115144061553
+            }
+        ],
+        "crop_C31_11eab9d0-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0339.png",
+                "similarity": 0.9125713524530126
+            },
+            {
+                "generated_path": "seed0113.png",
+                "similarity": 0.9071106609415408
+            }
+        ],
+        "crop_C58_11b33f0b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0606.png",
+                "similarity": 0.9322531772119472
+            },
+            {
+                "generated_path": "seed0762.png",
+                "similarity": 0.9320536111157776
+            }
+        ],
+        "crop_C17_11a55354-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0417.png",
+                "similarity": 0.9029295779378869
+            },
+            {
+                "generated_path": "seed0035.png",
+                "similarity": 0.8965670312334814
+            }
+        ],
+        "crop_C16_11adaa7d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0232.png",
+                "similarity": 0.9027092712012913
+            },
+            {
+                "generated_path": "seed0140.png",
+                "similarity": 0.8902681814969421
+            }
+        ],
+        "crop_C54_100de907-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0230.png",
+                "similarity": 0.8890158759150255
+            },
+            {
+                "generated_path": "seed0424.png",
+                "similarity": 0.8831931437484656
+            }
+        ],
+        "crop_C12_118c7ea9-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0721.png",
+                "similarity": 0.8846192920698415
+            }
+        ],
+        "crop_C34_11a4726e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0624.png",
+                "similarity": 0.8917852856144582
+            },
+            {
+                "generated_path": "seed0959.png",
+                "similarity": 0.878845163268486
+            }
+        ],
+        "crop_C25_3e0575a5-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0633.png",
+                "similarity": 0.9042290323461375
+            },
+            {
+                "generated_path": "seed0746.png",
+                "similarity": 0.8996748813966998
+            }
+        ],
+        "crop_C14_11a3dccc-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0625.png",
+                "similarity": 0.8946184815779964
+            },
+            {
+                "generated_path": "seed0706.png",
+                "similarity": 0.8936741404670233
+            }
+        ],
+        "crop_C2_3e070028-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0504.png",
+                "similarity": 0.8930489871729784
+            },
+            {
+                "generated_path": "seed0921.png",
+                "similarity": 0.8920603132810708
+            }
+        ],
+        "crop_C16_3e321900-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0852.png",
+                "similarity": 0.9026968817070236
+            },
+            {
+                "generated_path": "seed0477.png",
+                "similarity": 0.8895422860342742
+            }
+        ],
+        "crop_C23_1a441195-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0130.png",
+                "similarity": 0.9034263856987198
+            },
+            {
+                "generated_path": "seed0782.png",
+                "similarity": 0.8961024765670244
+            }
+        ],
+        "crop_C11_16a751e5-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0045.png",
+                "similarity": 0.9221857327558276
+            },
+            {
+                "generated_path": "seed0863.png",
+                "similarity": 0.9035494595929535
+            }
+        ],
+        "crop_C22_3e2c60e8-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0204.png",
+                "similarity": 0.9154212595643748
+            },
+            {
+                "generated_path": "seed0263.png",
+                "similarity": 0.9135946430043722
+            }
+        ],
+        "crop_C46_10e95623-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0381.png",
+                "similarity": 0.9015531302981183
+            },
+            {
+                "generated_path": "seed0571.png",
+                "similarity": 0.8893867878205354
+            }
+        ],
+        "crop_C26_100cce36-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0839.png",
+                "similarity": 0.9133108160487491
+            },
+            {
+                "generated_path": "seed0851.png",
+                "similarity": 0.9094983097445115
+            }
+        ],
+        "crop_C14_16ae2651-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0649.png",
+                "similarity": 0.9317032519822828
+            },
+            {
+                "generated_path": "seed0418.png",
+                "similarity": 0.9256162108438175
+            }
+        ],
+        "crop_C18_100c5d05-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0458.png",
+                "similarity": 0.8807576712715156
+            },
+            {
+                "generated_path": "seed0103.png",
+                "similarity": 0.8717096697115325
+            }
+        ],
+        "crop_C11_11ab7c79-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0971.png",
+                "similarity": 0.9175763000567795
+            },
+            {
+                "generated_path": "seed0338.png",
+                "similarity": 0.9135003081575903
+            }
+        ],
+        "crop_C3_1894aa21-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0457.png",
+                "similarity": 0.8921368356533529
+            },
+            {
+                "generated_path": "seed0044.png",
+                "similarity": 0.8879146955156698
+            }
+        ],
+        "crop_C58_11c1e224-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0626.png",
+                "similarity": 0.9152899100923794
+            },
+            {
+                "generated_path": "seed0059.png",
+                "similarity": 0.9034515173552261
+            }
+        ],
+        "crop_C12_16d1ac58-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0718.png",
+                "similarity": 0.9273501493014741
+            },
+            {
+                "generated_path": "seed0763.png",
+                "similarity": 0.919798186353307
+            }
+        ],
+        "crop_C20_11dddfd1-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0355.png",
+                "similarity": 0.9315790435587775
+            },
+            {
+                "generated_path": "seed0884.png",
+                "similarity": 0.9011871763433766
+            }
+        ],
+        "crop_C11_100d1d9b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0655.png",
+                "similarity": 0.9201773600298823
+            },
+            {
+                "generated_path": "seed0332.png",
+                "similarity": 0.9180596103918198
+            }
+        ],
+        "crop_C53_1212d1db-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0844.png",
+                "similarity": 0.8787353219382693
+            },
+            {
+                "generated_path": "seed0460.png",
+                "similarity": 0.865653719236604
+            }
+        ],
+        "crop_C13_18932ff8-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0961.png",
+                "similarity": 0.9074672394137216
+            },
+            {
+                "generated_path": "seed0684.png",
+                "similarity": 0.9017744855113942
+            }
+        ],
+        "crop_C43_11dde8db-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0290.png",
+                "similarity": 0.8971181820732793
+            },
+            {
+                "generated_path": "seed0390.png",
+                "similarity": 0.892629948351585
+            }
+        ],
+        "crop_C12_3e08642a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0728.png",
+                "similarity": 0.9329811213332636
+            },
+            {
+                "generated_path": "seed0500.png",
+                "similarity": 0.9202651623914012
+            }
+        ],
+        "crop_C50_12da43bc-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0341.png",
+                "similarity": 0.8966458940207482
+            },
+            {
+                "generated_path": "seed0296.png",
+                "similarity": 0.8941513494404811
+            }
+        ],
+        "crop_C21_11adaec4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0281.png",
+                "similarity": 0.9063364455909839
+            },
+            {
+                "generated_path": "seed0058.png",
+                "similarity": 0.8530094040042391
+            }
+        ],
+        "crop_C54_11bb1033-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0440.png",
+                "similarity": 0.8913113497461803
+            },
+            {
+                "generated_path": "seed0012.png",
+                "similarity": 0.890902208045795
+            }
+        ],
+        "crop_C46_11af9a16-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0530.png",
+                "similarity": 0.9285569796266235
+            },
+            {
+                "generated_path": "seed0717.png",
+                "similarity": 0.9281655674849685
+            }
+        ],
+        "crop_C37_11a5b375-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0703.png",
+                "similarity": 0.9157238871235878
+            },
+            {
+                "generated_path": "seed0686.png",
+                "similarity": 0.9130832328795123
+            }
+        ],
+        "crop_C23_11b2ff25-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0761.png",
+                "similarity": 0.9093476235343712
+            },
+            {
+                "generated_path": "seed0244.png",
+                "similarity": 0.9092537411560548
+            }
+        ],
+        "crop_C14_0ec3bffa-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0919.png",
+                "similarity": 0.8977138524839071
+            },
+            {
+                "generated_path": "seed0740.png",
+                "similarity": 0.8975921356011303
+            }
+        ],
+        "crop_C5_16a1694f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0879.png",
+                "similarity": 0.8604991520897299
+            },
+            {
+                "generated_path": "seed0974.png",
+                "similarity": 0.8528306955744157
+            }
+        ],
+        "crop_C23_11b3664b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0697.png",
+                "similarity": 0.927733224847441
+            },
+            {
+                "generated_path": "seed0938.png",
+                "similarity": 0.9031551243104774
+            }
+        ],
+        "crop_C2_11c1e66c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0055.png",
+                "similarity": 0.904533735301005
+            },
+            {
+                "generated_path": "seed0208.png",
+                "similarity": 0.9041283336728673
+            }
+        ],
+        "crop_C12_16af1ad4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0131.png",
+                "similarity": 0.8813949952223696
+            },
+            {
+                "generated_path": "seed0664.png",
+                "similarity": 0.8787219481813073
+            }
+        ],
+        "crop_C3_3e023fb2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0641.png",
+                "similarity": 0.8560713129103555
+            }
+        ],
+        "crop_C39_16b1bca9-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0377.png",
+                "similarity": 0.8997394433509556
+            },
+            {
+                "generated_path": "seed0123.png",
+                "similarity": 0.8963637070072944
+            }
+        ],
+        "crop_C55_3e077f67-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0472.png",
+                "similarity": 0.9083479730966265
+            },
+            {
+                "generated_path": "seed0789.png",
+                "similarity": 0.9056482881322326
+            }
+        ],
+        "crop_C35_11b2fabb-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0046.png",
+                "similarity": 0.9038150121168724
+            },
+            {
+                "generated_path": "seed0454.png",
+                "similarity": 0.9022293569616817
+            }
+        ],
+        "crop_C15_118df450-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0318.png",
+                "similarity": 0.8566425201887211
+            },
+            {
+                "generated_path": "seed0435.png",
+                "similarity": 0.852380146374733
+            }
+        ],
+        "crop_C1_3e379b97-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0960.png",
+                "similarity": 0.9125236584465293
+            },
+            {
+                "generated_path": "seed0222.png",
+                "similarity": 0.9040632613946508
+            }
+        ],
+        "crop_C30_3e070614-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0289.png",
+                "similarity": 0.8940476116666745
+            },
+            {
+                "generated_path": "seed0008.png",
+                "similarity": 0.8887625318997578
+            }
+        ],
+        "crop_C55_100c94f5-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0751.png",
+                "similarity": 0.9174372908258743
+            },
+            {
+                "generated_path": "seed0321.png",
+                "similarity": 0.905871035642922
+            }
+        ],
+        "crop_C36_11ec97af-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0710.png",
+                "similarity": 0.8863556683148639
+            },
+            {
+                "generated_path": "seed0605.png",
+                "similarity": 0.8806422508233226
+            }
+        ],
+        "crop_C3_16bfa7fb-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0922.png",
+                "similarity": 0.8736849694208733
+            },
+            {
+                "generated_path": "seed0221.png",
+                "similarity": 0.8592305176511373
+            }
+        ],
+        "crop_C25_11c1bb06-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0349.png",
+                "similarity": 0.9262826795427498
+            },
+            {
+                "generated_path": "seed0036.png",
+                "similarity": 0.917309380271585
+            }
+        ],
+        "crop_C15_11b35d46-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0466.png",
+                "similarity": 0.9239802502843955
+            },
+            {
+                "generated_path": "seed0690.png",
+                "similarity": 0.9201055322311578
+            }
+        ],
+        "crop_C10_16a55482-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0181.png",
+                "similarity": 0.8703399396823249
+            }
+        ],
+        "crop_C34_16a706fd-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0429.png",
+                "similarity": 0.8753209783275806
+            },
+            {
+                "generated_path": "seed0683.png",
+                "similarity": 0.8637460473978341
+            }
+        ],
+        "crop_C52_11babc6f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0353.png",
+                "similarity": 0.925357348840686
+            },
+            {
+                "generated_path": "seed0369.png",
+                "similarity": 0.9187082864352072
+            }
+        ],
+        "crop_C7_3e02ff5c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0397.png",
+                "similarity": 0.8900963122056761
+            },
+            {
+                "generated_path": "seed0993.png",
+                "similarity": 0.886050737813351
+            }
+        ],
+        "crop_C47_16a72f09-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0210.png",
+                "similarity": 0.9303990369068925
+            },
+            {
+                "generated_path": "seed0229.png",
+                "similarity": 0.9273205690407229
+            }
+        ],
+        "crop_C57_11ca2e37-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0948.png",
+                "similarity": 0.8783993266032423
+            },
+            {
+                "generated_path": "seed0597.png",
+                "similarity": 0.8779295873949508
+            }
+        ],
+        "crop_C2_10e9602e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0490.png",
+                "similarity": 0.9006923983680584
+            },
+            {
+                "generated_path": "seed0602.png",
+                "similarity": 0.8904924609570667
+            }
+        ],
+        "crop_C39_11de0aac-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0722.png",
+                "similarity": 0.8930985492642353
+            },
+            {
+                "generated_path": "seed0660.png",
+                "similarity": 0.8865102157533732
+            }
+        ],
+        "crop_C1_16b22481-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0792.png",
+                "similarity": 0.9316790332879136
+            },
+            {
+                "generated_path": "seed0451.png",
+                "similarity": 0.9243647227058415
+            }
+        ],
+        "crop_C34_118d7447-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0737.png",
+                "similarity": 0.8907458921748873
+            },
+            {
+                "generated_path": "seed0531.png",
+                "similarity": 0.8856257842917006
+            }
+        ],
+        "crop_C11_3e34cde8-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0618.png",
+                "similarity": 0.8787052422422087
+            },
+            {
+                "generated_path": "seed0254.png",
+                "similarity": 0.8630787069172221
+            }
+        ],
+        "crop_C3_11aaef61-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0128.png",
+                "similarity": 0.9387380580687475
+            },
+            {
+                "generated_path": "seed0446.png",
+                "similarity": 0.9201695621633063
+            }
+        ],
+        "crop_C40_1212d609-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0685.png",
+                "similarity": 0.9094986939166075
+            },
+            {
+                "generated_path": "seed0771.png",
+                "similarity": 0.9015150440521429
+            }
+        ],
+        "crop_C7_11c9f225-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0566.png",
+                "similarity": 0.8910827129241812
+            },
+            {
+                "generated_path": "seed0434.png",
+                "similarity": 0.8868191240946675
+            }
+        ],
+        "crop_C49_11bb1485-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0847.png",
+                "similarity": 0.90861689615301
+            },
+            {
+                "generated_path": "seed0327.png",
+                "similarity": 0.8844133230076375
+            }
+        ],
+        "crop_C16_118e4f9b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0432.png",
+                "similarity": 0.879650421109421
+            },
+            {
+                "generated_path": "seed0065.png",
+                "similarity": 0.8794991180228247
+            }
+        ],
+        "crop_C44_11dde41b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0675.png",
+                "similarity": 0.8896095566071016
+            },
+            {
+                "generated_path": "seed0514.png",
+                "similarity": 0.8856092501804194
+            }
+        ],
+        "crop_C1_1194f209-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0586.png",
+                "similarity": 0.8924553935658985
+            },
+            {
+                "generated_path": "seed0522.png",
+                "similarity": 0.8790773640617808
+            }
+        ],
+        "crop_C40_3e086d67-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0881.png",
+                "similarity": 0.9337688478647441
+            },
+            {
+                "generated_path": "seed0425.png",
+                "similarity": 0.928105577454546
+            }
+        ],
+        "crop_C51_16b284ca-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0814.png",
+                "similarity": 0.867554160434546
+            },
+            {
+                "generated_path": "seed0560.png",
+                "similarity": 0.8645134387741077
+            }
+        ],
+        "crop_C18_1212edd9-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0064.png",
+                "similarity": 0.8939357433098841
+            },
+            {
+                "generated_path": "seed0946.png",
+                "similarity": 0.8728201058388272
+            }
+        ],
+        "crop_C51_3e367da9-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0184.png",
+                "similarity": 0.9127710130707776
+            },
+            {
+                "generated_path": "seed0273.png",
+                "similarity": 0.9090785545321188
+            }
+        ],
+        "crop_C7_100debf8-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0955.png",
+                "similarity": 0.869536661284118
+            },
+            {
+                "generated_path": "seed0850.png",
+                "similarity": 0.8671842481979135
+            }
+        ],
+        "crop_C19_119a5cc4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0801.png",
+                "similarity": 0.8861109467514576
+            },
+            {
+                "generated_path": "seed0550.png",
+                "similarity": 0.8792402083964589
+            }
+        ],
+        "crop_C40_11b31138-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0907.png",
+                "similarity": 0.9144204933699704
+            },
+            {
+                "generated_path": "seed0929.png",
+                "similarity": 0.8952887625325276
+            }
+        ],
+        "crop_C39_11a6d3a9-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0854.png",
+                "similarity": 0.9067505642777003
+            },
+            {
+                "generated_path": "seed0455.png",
+                "similarity": 0.8981122286616348
+            }
+        ],
+        "crop_C30_11b351a3-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0878.png",
+                "similarity": 0.9353243989802822
+            },
+            {
+                "generated_path": "seed0073.png",
+                "similarity": 0.9268627650668827
+            }
+        ],
+        "crop_C4_3e02920c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0912.png",
+                "similarity": 0.9241804391368731
+            },
+            {
+                "generated_path": "seed0917.png",
+                "similarity": 0.9212395293033877
+            }
+        ],
+        "crop_C31_100e5536-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0311.png",
+                "similarity": 0.8747354511966192
+            },
+            {
+                "generated_path": "seed0109.png",
+                "similarity": 0.8710886450085379
+            }
+        ],
+        "crop_C54_118ed313-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0383.png",
+                "similarity": 0.8921521944280734
+            },
+            {
+                "generated_path": "seed0203.png",
+                "similarity": 0.8838463629367866
+            }
+        ],
+        "crop_C48_11a70c31-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0133.png",
+                "similarity": 0.9398802767322607
+            },
+            {
+                "generated_path": "seed0601.png",
+                "similarity": 0.9223337524659126
+            }
+        ],
+        "crop_C29_16db6335-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0523.png",
+                "similarity": 0.8937941903346005
+            },
+            {
+                "generated_path": "seed0050.png",
+                "similarity": 0.8757297660847551
+            }
+        ],
+        "crop_C30_16bfe37e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0478.png",
+                "similarity": 0.9145169272457484
+            },
+            {
+                "generated_path": "seed0856.png",
+                "similarity": 0.8929045334534208
+            }
+        ],
+        "crop_C44_3e0a02af-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0099.png",
+                "similarity": 0.8951282238758747
+            },
+            {
+                "generated_path": "seed0231.png",
+                "similarity": 0.8748175320742934
+            }
+        ],
+        "crop_C0_11c9e04e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0233.png",
+                "similarity": 0.8993197950633112
+            },
+            {
+                "generated_path": "seed0197.png",
+                "similarity": 0.8944310797509891
+            }
+        ],
+        "crop_C3_11a4ad0e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0827.png",
+                "similarity": 0.8994862316004604
+            },
+            {
+                "generated_path": "seed0853.png",
+                "similarity": 0.8608683447127581
+            }
+        ],
+        "crop_C18_11ec62ff-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0698.png",
+                "similarity": 0.8759905800993599
+            },
+            {
+                "generated_path": "seed0725.png",
+                "similarity": 0.8730248475080923
+            }
+        ],
+        "crop_C18_118cf1a7-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0544.png",
+                "similarity": 0.9110330845410197
+            },
+            {
+                "generated_path": "seed0533.png",
+                "similarity": 0.9098755327130088
+            }
+        ],
+        "crop_C13_3df7f441-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0918.png",
+                "similarity": 0.9122457937378736
+            },
+            {
+                "generated_path": "seed0308.png",
+                "similarity": 0.902650873785199
+            }
+        ],
+        "crop_C40_12129427-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0110.png",
+                "similarity": 0.8917757391598309
+            },
+            {
+                "generated_path": "seed0191.png",
+                "similarity": 0.8861306971873333
+            }
+        ],
+        "crop_C31_11ab0f72-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0428.png",
+                "similarity": 0.8926434073826562
+            },
+            {
+                "generated_path": "seed0773.png",
+                "similarity": 0.888544249290289
+            }
+        ],
+        "crop_C14_100deed8-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0168.png",
+                "similarity": 0.9059859457245731
+            },
+            {
+                "generated_path": "seed0335.png",
+                "similarity": 0.8971112971578149
+            }
+        ],
+        "crop_C49_16bfd5c5-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0735.png",
+                "similarity": 0.9006780414723418
+            },
+            {
+                "generated_path": "seed0147.png",
+                "similarity": 0.8980863082550137
+            }
+        ],
+        "crop_C22_11c073bd-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0286.png",
+                "similarity": 0.868177784790909
+            },
+            {
+                "generated_path": "seed0668.png",
+                "similarity": 0.8678231064732639
+            }
+        ],
+        "crop_C42_3e34d475-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0536.png",
+                "similarity": 0.8988437660959263
+            },
+            {
+                "generated_path": "seed0225.png",
+                "similarity": 0.8945414430369812
+            }
+        ],
+        "crop_C24_100ca829-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0836.png",
+                "similarity": 0.8722139053136213
+            }
+        ],
+        "crop_C3_1195026d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0060.png",
+                "similarity": 0.8868430912088351
+            },
+            {
+                "generated_path": "seed0868.png",
+                "similarity": 0.8854972524143314
+            }
+        ],
+        "crop_C48_11ea64ad-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0985.png",
+                "similarity": 0.9133869170570897
+            },
+            {
+                "generated_path": "seed0593.png",
+                "similarity": 0.8992693667940559
+            }
+        ],
+        "crop_C20_118c56dc-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0741.png",
+                "similarity": 0.880338912396989
+            },
+            {
+                "generated_path": "seed0781.png",
+                "similarity": 0.8754379212877611
+            }
+        ],
+        "crop_C27_11a72aff-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0170.png",
+                "similarity": 0.9004440781865485
+            },
+            {
+                "generated_path": "seed0778.png",
+                "similarity": 0.8806061452212679
+            }
+        ],
+        "crop_C54_11a4fa8e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0179.png",
+                "similarity": 0.9192053853047121
+            },
+            {
+                "generated_path": "seed0513.png",
+                "similarity": 0.9160660749189707
+            }
+        ],
+        "crop_C38_11adcff2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0785.png",
+                "similarity": 0.9092338830812315
+            },
+            {
+                "generated_path": "seed0657.png",
+                "similarity": 0.9082882578509242
+            }
+        ],
+        "crop_C37_16db94bf-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0385.png",
+                "similarity": 0.8872142288670959
+            },
+            {
+                "generated_path": "seed0299.png",
+                "similarity": 0.8840403196496825
+            }
+        ],
+        "crop_C39_11b3969b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0932.png",
+                "similarity": 0.8962616577822401
+            },
+            {
+                "generated_path": "seed0652.png",
+                "similarity": 0.8912348428109551
+            }
+        ],
+        "crop_C30_3e034026-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0678.png",
+                "similarity": 0.9058885593316823
+            },
+            {
+                "generated_path": "seed0871.png",
+                "similarity": 0.8963766202825637
+            }
+        ],
+        "crop_C17_11af9e53-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0274.png",
+                "similarity": 0.9132776724371561
+            },
+            {
+                "generated_path": "seed0380.png",
+                "similarity": 0.9034425493542164
+            }
+        ],
+        "crop_C32_11a32917-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0732.png",
+                "similarity": 0.8782398152643109
+            },
+            {
+                "generated_path": "seed0547.png",
+                "similarity": 0.8755474984904873
+            }
+        ],
+        "crop_C38_11de0257-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0416.png",
+                "similarity": 0.9173483172021752
+            },
+            {
+                "generated_path": "seed0898.png",
+                "similarity": 0.9161023096455527
+            }
+        ],
+        "crop_C25_3e378d03-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0262.png",
+                "similarity": 0.8921387682895503
+            },
+            {
+                "generated_path": "seed0414.png",
+                "similarity": 0.8898919920804711
+            }
+        ],
+        "crop_C3_118e15f9-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0999.png",
+                "similarity": 0.8869240348049765
+            },
+            {
+                "generated_path": "seed0419.png",
+                "similarity": 0.8809595610328596
+            }
+        ],
+        "crop_C22_10e95b7b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0305.png",
+                "similarity": 0.8953054722899538
+            },
+            {
+                "generated_path": "seed0340.png",
+                "similarity": 0.8783708825651225
+            }
+        ],
+        "crop_C34_12130664-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0812.png",
+                "similarity": 0.8789177188259564
+            },
+            {
+                "generated_path": "seed0373.png",
+                "similarity": 0.8709293453448652
+            }
+        ],
+        "crop_C46_11de0f7c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0821.png",
+                "similarity": 0.9385738806762157
+            },
+            {
+                "generated_path": "seed0842.png",
+                "similarity": 0.8970369036748506
+            }
+        ],
+        "crop_C18_11c76fad-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0115.png",
+                "similarity": 0.921701684865446
+            },
+            {
+                "generated_path": "seed0681.png",
+                "similarity": 0.9191814272175854
+            }
+        ],
+        "crop_C33_3e035ed2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0640.png",
+                "similarity": 0.9259390115796813
+            },
+            {
+                "generated_path": "seed0266.png",
+                "similarity": 0.9239506574033466
+            }
+        ],
+        "crop_C19_11de4f5d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0426.png",
+                "similarity": 0.9294684937326149
+            },
+            {
+                "generated_path": "seed0828.png",
+                "similarity": 0.921371248166418
+            }
+        ],
+        "crop_C51_11a3b87e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0078.png",
+                "similarity": 0.8922852070220112
+            },
+            {
+                "generated_path": "seed0492.png",
+                "similarity": 0.8899661817131225
+            }
+        ],
+        "crop_C59_0ec3c8bf-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0135.png",
+                "similarity": 0.895431635883711
+            },
+            {
+                "generated_path": "seed0386.png",
+                "similarity": 0.8918089822189015
+            }
+        ],
+        "crop_C55_119a5889-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0956.png",
+                "similarity": 0.8929779180650972
+            },
+            {
+                "generated_path": "seed0823.png",
+                "similarity": 0.8929486736464237
+            }
+        ],
+        "crop_C5_1212c0a3-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0473.png",
+                "similarity": 0.9056669953158566
+            },
+            {
+                "generated_path": "seed0900.png",
+                "similarity": 0.9025656846393645
+            }
+        ],
+        "crop_C17_11b377d2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0358.png",
+                "similarity": 0.886623695428295
+            },
+            {
+                "generated_path": "seed0139.png",
+                "similarity": 0.8849204280674764
+            }
+        ],
+        "crop_C47_3e02f939-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0527.png",
+                "similarity": 0.9132395120876053
+            },
+            {
+                "generated_path": "seed0833.png",
+                "similarity": 0.9086091481001757
+            }
+        ],
+        "crop_C15_1212bc7f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0880.png",
+                "similarity": 0.934691190903764
+            },
+            {
+                "generated_path": "seed0039.png",
+                "similarity": 0.9104037602106185
+            }
+        ],
+        "crop_C11_3e32454a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0636.png",
+                "similarity": 0.8801726000588331
+            },
+            {
+                "generated_path": "seed0049.png",
+                "similarity": 0.8611326591189928
+            }
+        ],
+        "crop_C22_118d8ba8-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0581.png",
+                "similarity": 0.8816249922519003
+            },
+            {
+                "generated_path": "seed0374.png",
+                "similarity": 0.8814705153963234
+            }
+        ],
+        "crop_C9_0ec3c5be-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0068.png",
+                "similarity": 0.8951968618316745
+            },
+            {
+                "generated_path": "seed0546.png",
+                "similarity": 0.8944648461534569
+            }
+        ],
+        "crop_C32_11c76b11-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0648.png",
+                "similarity": 0.9352848694803746
+            },
+            {
+                "generated_path": "seed0015.png",
+                "similarity": 0.9351105582953929
+            }
+        ],
+        "crop_C51_3e34b039-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0569.png",
+                "similarity": 0.8636313237228651
+            },
+            {
+                "generated_path": "seed0532.png",
+                "similarity": 0.8548521503186314
+            }
+        ],
+        "crop_C13_11ada1a1-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0556.png",
+                "similarity": 0.8884041404602725
+            },
+            {
+                "generated_path": "seed0889.png",
+                "similarity": 0.8808569435971183
+            }
+        ],
+        "crop_C52_3e028f21-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0207.png",
+                "similarity": 0.885414683727072
+            },
+            {
+                "generated_path": "seed0623.png",
+                "similarity": 0.867082868552064
+            }
+        ],
+        "crop_C25_3e022a2e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0885.png",
+                "similarity": 0.9023118917959426
+            },
+            {
+                "generated_path": "seed0227.png",
+                "similarity": 0.8992755357496744
+            }
+        ],
+        "crop_C50_16a70cd1-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0089.png",
+                "similarity": 0.8777450139289057
+            },
+            {
+                "generated_path": "seed0312.png",
+                "similarity": 0.8531111933997418
+            }
+        ],
+        "crop_C42_100b653e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0520.png",
+                "similarity": 0.8757091924737315
+            },
+            {
+                "generated_path": "seed0548.png",
+                "similarity": 0.8736171112948643
+            }
+        ],
+        "crop_C38_100c6bef-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0882.png",
+                "similarity": 0.9173622922674532
+            },
+            {
+                "generated_path": "seed0673.png",
+                "similarity": 0.9107222731680414
+            }
+        ],
+        "crop_C2_11c8744e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0048.png",
+                "similarity": 0.8923078104478128
+            },
+            {
+                "generated_path": "seed0005.png",
+                "similarity": 0.8863662689501133
+            }
+        ],
+        "crop_C57_11b2e639-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0148.png",
+                "similarity": 0.9254385094491071
+            },
+            {
+                "generated_path": "seed0396.png",
+                "similarity": 0.9184618157553369
+            }
+        ],
+        "crop_C53_11eb504b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0893.png",
+                "similarity": 0.9261628770888842
+            },
+            {
+                "generated_path": "seed0376.png",
+                "similarity": 0.8659865124912078
+            }
+        ],
+        "crop_C8_1194facc-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0004.png",
+                "similarity": 0.8970525335232947
+            },
+            {
+                "generated_path": "seed0786.png",
+                "similarity": 0.8848096829606245
+            }
+        ],
+        "crop_C55_11eca04d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0379.png",
+                "similarity": 0.9388935677827965
+            },
+            {
+                "generated_path": "seed0573.png",
+                "similarity": 0.9329304645392771
+            }
+        ],
+        "crop_C10_16a5462e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0913.png",
+                "similarity": 0.8655678256354932
+            },
+            {
+                "generated_path": "seed0672.png",
+                "similarity": 0.8582391095601101
+            }
+        ],
+        "crop_C6_11db1dda-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0319.png",
+                "similarity": 0.9214045782183724
+            },
+            {
+                "generated_path": "seed0800.png",
+                "similarity": 0.9174571464504154
+            }
+        ],
+        "crop_C22_100c571a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0777.png",
+                "similarity": 0.9064753165094244
+            },
+            {
+                "generated_path": "seed0034.png",
+                "similarity": 0.9051605856273364
+            }
+        ],
+        "crop_C28_3e028934-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0506.png",
+                "similarity": 0.9113657809311156
+            },
+            {
+                "generated_path": "seed0864.png",
+                "similarity": 0.9108005066965471
+            }
+        ],
+        "crop_C0_11afe4b4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0588.png",
+                "similarity": 0.8882256553834045
+            },
+            {
+                "generated_path": "seed0479.png",
+                "similarity": 0.8721659026243678
+            }
+        ],
+        "crop_C25_11c7d5fd-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0517.png",
+                "similarity": 0.9290497361716163
+            },
+            {
+                "generated_path": "seed0742.png",
+                "similarity": 0.9212613291543639
+            }
+        ],
+        "crop_C19_3e363fe7-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0498.png",
+                "similarity": 0.8899942523830505
+            },
+            {
+                "generated_path": "seed0022.png",
+                "similarity": 0.8860006489729322
+            }
+        ],
+        "crop_C24_118edc21-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0835.png",
+                "similarity": 0.9045543670789503
+            },
+            {
+                "generated_path": "seed0670.png",
+                "similarity": 0.9025200929720565
+            }
+        ],
+        "crop_C41_11be5157-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0753.png",
+                "similarity": 0.8885985025045386
+            },
+            {
+                "generated_path": "seed0134.png",
+                "similarity": 0.8833612625486542
+            }
+        ],
+        "crop_C8_11c75cd6-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0810.png",
+                "similarity": 0.896903634426668
+            },
+            {
+                "generated_path": "seed0242.png",
+                "similarity": 0.8926793443174078
+            }
+        ],
+        "crop_C5_1194995c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0193.png",
+                "similarity": 0.9240426485518072
+            },
+            {
+                "generated_path": "seed0787.png",
+                "similarity": 0.8981328720031526
+            }
+        ],
+        "crop_C29_16b9ad64-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0976.png",
+                "similarity": 0.9228154695361583
+            },
+            {
+                "generated_path": "seed0104.png",
+                "similarity": 0.8871471516480885
+            }
+        ],
+        "crop_C11_11b3b8da-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0643.png",
+                "similarity": 0.9272143856497824
+            },
+            {
+                "generated_path": "seed0497.png",
+                "similarity": 0.8958491048140144
+            }
+        ],
+        "crop_C48_118e41e8-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0223.png",
+                "similarity": 0.9175623139393491
+            },
+            {
+                "generated_path": "seed0947.png",
+                "similarity": 0.9019922368263034
+            }
+        ],
+        "crop_C41_11ec7d59-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0261.png",
+                "similarity": 0.87086313113224
+            },
+            {
+                "generated_path": "seed0237.png",
+                "similarity": 0.8698400511938955
+            }
+        ],
+        "crop_C44_119a65f1-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0592.png",
+                "similarity": 0.8691388082868403
+            },
+            {
+                "generated_path": "seed0378.png",
+                "similarity": 0.8542867307343273
+            }
+        ],
+        "crop_C9_100b5bd2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0145.png",
+                "similarity": 0.8768969048512033
+            },
+            {
+                "generated_path": "seed0729.png",
+                "similarity": 0.8598348548880866
+            }
+        ],
+        "crop_C42_11a34afa-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0367.png",
+                "similarity": 0.891834203503816
+            },
+            {
+                "generated_path": "seed0450.png",
+                "similarity": 0.8872829635944303
+            }
+        ],
+        "crop_C57_11aba312-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0016.png",
+                "similarity": 0.9053625658653914
+            },
+            {
+                "generated_path": "seed0943.png",
+                "similarity": 0.897993308222471
+            }
+        ],
+        "crop_C52_11ea6909-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0629.png",
+                "similarity": 0.8785974768238768
+            },
+            {
+                "generated_path": "seed0182.png",
+                "similarity": 0.8778247812271381
+            }
+        ],
+        "crop_C3_118c2b87-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0890.png",
+                "similarity": 0.9153364119577632
+            },
+            {
+                "generated_path": "seed0973.png",
+                "similarity": 0.908598387454099
+            }
+        ],
+        "crop_C15_11acfc7a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0021.png",
+                "similarity": 0.9112741446958227
+            },
+            {
+                "generated_path": "seed0609.png",
+                "similarity": 0.8913076318793193
+            }
+        ],
+        "crop_C54_100cc9f0-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0765.png",
+                "similarity": 0.917257622693137
+            },
+            {
+                "generated_path": "seed0818.png",
+                "similarity": 0.9152344988926532
+            }
+        ],
+        "crop_C9_11a9f92b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0387.png",
+                "similarity": 0.8938673770053003
+            },
+            {
+                "generated_path": "seed0010.png",
+                "similarity": 0.855554638140041
+            }
+        ],
+        "crop_C15_18933e99-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0315.png",
+                "similarity": 0.9285191535539296
+            },
+            {
+                "generated_path": "seed0515.png",
+                "similarity": 0.9262088578115613
+            }
+        ],
+        "crop_C28_16c00c30-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0408.png",
+                "similarity": 0.8946111670907119
+            },
+            {
+                "generated_path": "seed0351.png",
+                "similarity": 0.8857511560778232
+            }
+        ],
+        "crop_C46_3e737c6c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0092.png",
+                "similarity": 0.9274561705245803
+            },
+            {
+                "generated_path": "seed0775.png",
+                "similarity": 0.9248515749832127
+            }
+        ],
+        "crop_C5_3e35c574-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0448.png",
+                "similarity": 0.8975883548032518
+            },
+            {
+                "generated_path": "seed0275.png",
+                "similarity": 0.8931310455799004
+            }
+        ],
+        "crop_C23_11b361d1-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0195.png",
+                "similarity": 0.879612066901006
+            },
+            {
+                "generated_path": "seed0371.png",
+                "similarity": 0.8730527425941256
+            }
+        ],
+        "crop_C10_11ac8a7c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0613.png",
+                "similarity": 0.9084944917495444
+            },
+            {
+                "generated_path": "seed0766.png",
+                "similarity": 0.8773041496202185
+            }
+        ],
+        "crop_C5_11bbc053-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0433.png",
+                "similarity": 0.8846072242032375
+            },
+            {
+                "generated_path": "seed0779.png",
+                "similarity": 0.8804980575193915
+            }
+        ],
+        "crop_C39_3e0236e3-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0764.png",
+                "similarity": 0.8973518325545857
+            },
+            {
+                "generated_path": "seed0820.png",
+                "similarity": 0.8796126918343845
+            }
+        ],
+        "crop_C13_16bf939d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0512.png",
+                "similarity": 0.8700009710363962
+            },
+            {
+                "generated_path": "seed0642.png",
+                "similarity": 0.860180634529867
+            }
+        ],
+        "crop_C35_119a7f97-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0323.png",
+                "similarity": 0.8601351592284988
+            },
+            {
+                "generated_path": "seed0747.png",
+                "similarity": 0.8596350354579448
+            }
+        ],
+        "crop_C6_11b3ce3f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0445.png",
+                "similarity": 0.8807129170968921
+            },
+            {
+                "generated_path": "seed0079.png",
+                "similarity": 0.8737806619225286
+            }
+        ],
+        "crop_C35_3e70505e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0783.png",
+                "similarity": 0.9046292321222469
+            },
+            {
+                "generated_path": "seed0091.png",
+                "similarity": 0.8884897674957551
+            }
+        ],
+        "crop_C25_11c82e3d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0206.png",
+                "similarity": 0.9296038094752478
+            },
+            {
+                "generated_path": "seed0141.png",
+                "similarity": 0.9168171095158345
+            }
+        ],
+        "crop_C56_119a61a4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0164.png",
+                "similarity": 0.8898830753563065
+            },
+            {
+                "generated_path": "seed0486.png",
+                "similarity": 0.8526906062801136
+            }
+        ],
+        "crop_C27_3e3cd429-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0306.png",
+                "similarity": 0.9103153135739674
+            },
+            {
+                "generated_path": "seed0802.png",
+                "similarity": 0.9018838138714252
+            }
+        ],
+        "crop_C33_11de0682-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0796.png",
+                "similarity": 0.8809834114795805
+            },
+            {
+                "generated_path": "seed0304.png",
+                "similarity": 0.871551602292975
+            }
+        ],
+        "crop_C3_100c5ff1-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0528.png",
+                "similarity": 0.9226364301320653
+            },
+            {
+                "generated_path": "seed0964.png",
+                "similarity": 0.8981923732862405
+            }
+        ],
+        "crop_C52_11ea38a3-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0337.png",
+                "similarity": 0.8634695727905359
+            },
+            {
+                "generated_path": "seed0951.png",
+                "similarity": 0.8579834283743112
+            }
+        ],
+        "crop_C44_1a429a59-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0945.png",
+                "similarity": 0.9069015123775077
+            },
+            {
+                "generated_path": "seed0756.png",
+                "similarity": 0.9047963021389871
+            }
+        ],
+        "crop_C3_16bfcbeb-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0553.png",
+                "similarity": 0.8702911186686624
+            },
+            {
+                "generated_path": "seed0579.png",
+                "similarity": 0.8692292092371313
+            }
+        ],
+        "crop_C54_3e0869f8-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0634.png",
+                "similarity": 0.9064780469089828
+            },
+            {
+                "generated_path": "seed0631.png",
+                "similarity": 0.9019965926385124
+            }
+        ],
+        "crop_C55_11db0af1-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0172.png",
+                "similarity": 0.9082156082974452
+            },
+            {
+                "generated_path": "seed0610.png",
+                "similarity": 0.9024239534005827
+            }
+        ],
+        "crop_C9_11a62d8c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0061.png",
+                "similarity": 0.9221201966151503
+            },
+            {
+                "generated_path": "seed0033.png",
+                "similarity": 0.854197370151003
+            }
+        ],
+        "crop_C21_11a3ce07-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0604.png",
+                "similarity": 0.8710166014095373
+            },
+            {
+                "generated_path": "seed0555.png",
+                "similarity": 0.863100350963131
+            }
+        ],
+        "crop_C25_11a6c301-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0661.png",
+                "similarity": 0.9057565140701368
+            },
+            {
+                "generated_path": "seed0617.png",
+                "similarity": 0.8943097442693514
+            }
+        ],
+        "crop_C33_11c227bd-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0637.png",
+                "similarity": 0.8815810962021371
+            },
+            {
+                "generated_path": "seed0855.png",
+                "similarity": 0.8785004327613748
+            }
+        ],
+        "crop_C45_11dddba2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0301.png",
+                "similarity": 0.8749400754126847
+            },
+            {
+                "generated_path": "seed0143.png",
+                "similarity": 0.8650094738699277
+            }
+        ],
+        "crop_C38_11f6a30a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0891.png",
+                "similarity": 0.8605950951409455
+            },
+            {
+                "generated_path": "seed0224.png",
+                "similarity": 0.8565827160820366
+            }
+        ],
+        "crop_C53_3e32422b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0538.png",
+                "similarity": 0.8908639926660712
+            },
+            {
+                "generated_path": "seed0549.png",
+                "similarity": 0.8742086106673149
+            }
+        ],
+        "crop_C10_11a464df-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0352.png",
+                "similarity": 0.9003646506625168
+            },
+            {
+                "generated_path": "seed0267.png",
+                "similarity": 0.8971753090471754
+            }
+        ],
+        "crop_C45_11bafe0e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0157.png",
+                "similarity": 0.9285885745830382
+            },
+            {
+                "generated_path": "seed0487.png",
+                "similarity": 0.8991544661820048
+            }
+        ],
+        "crop_C29_12da12e4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0453.png",
+                "similarity": 0.8942700970019629
+            },
+            {
+                "generated_path": "seed0962.png",
+                "similarity": 0.8876043663915808
+            }
+        ],
+        "crop_C31_11c8457a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0366.png",
+                "similarity": 0.8908857294047208
+            },
+            {
+                "generated_path": "seed0806.png",
+                "similarity": 0.8838666469564669
+            }
+        ],
+        "crop_C30_11ad8a98-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0255.png",
+                "similarity": 0.9349297584156117
+            },
+            {
+                "generated_path": "seed0901.png",
+                "similarity": 0.9302621193971039
+            }
+        ],
+        "crop_C18_11c86d3e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0730.png",
+                "similarity": 0.8890676208195362
+            },
+            {
+                "generated_path": "seed0406.png",
+                "similarity": 0.8849756839617104
+            }
+        ],
+        "crop_C55_11b41b2e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0650.png",
+                "similarity": 0.9309717028237705
+            },
+            {
+                "generated_path": "seed0461.png",
+                "similarity": 0.9159616161288824
+            }
+        ],
+        "crop_C23_11940557-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0692.png",
+                "similarity": 0.8565160427750407
+            },
+            {
+                "generated_path": "seed0826.png",
+                "similarity": 0.8501462617315895
+            }
+        ],
+        "crop_C58_3e04b109-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0488.png",
+                "similarity": 0.9160013254253965
+            },
+            {
+                "generated_path": "seed0996.png",
+                "similarity": 0.9099735276480483
+            }
+        ],
+        "crop_C55_3e0550c1-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0372.png",
+                "similarity": 0.85880851806797
+            },
+            {
+                "generated_path": "seed0470.png",
+                "similarity": 0.8539853770560726
+            }
+        ],
+        "crop_C24_11b01f3f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0243.png",
+                "similarity": 0.8917975853077118
+            }
+        ],
+        "crop_C25_11c83853-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0963.png",
+                "similarity": 0.9392039185568154
+            },
+            {
+                "generated_path": "seed0009.png",
+                "similarity": 0.9219926482188344
+            }
+        ],
+        "crop_C17_11bac10d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0992.png",
+                "similarity": 0.8554740796625007
+            },
+            {
+                "generated_path": "seed0822.png",
+                "similarity": 0.8530126140888534
+            }
+        ],
+        "crop_C51_0ec3c2ec-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0975.png",
+                "similarity": 0.9207162399300713
+            },
+            {
+                "generated_path": "seed0126.png",
+                "similarity": 0.8837417996059042
+            }
+        ],
+        "crop_C37_11a5a36e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0108.png",
+                "similarity": 0.886279982700984
+            },
+            {
+                "generated_path": "seed0350.png",
+                "similarity": 0.8725373900515938
+            }
+        ],
+        "crop_C1_11c7da20-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0456.png",
+                "similarity": 0.9042479954283654
+            },
+            {
+                "generated_path": "seed0307.png",
+                "similarity": 0.8781449378000956
+            }
+        ],
+        "crop_C28_11b33658-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0452.png",
+                "similarity": 0.8936165489465369
+            },
+            {
+                "generated_path": "seed0596.png",
+                "similarity": 0.8922396565863906
+            }
+        ],
+        "crop_C36_11a46977-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0405.png",
+                "similarity": 0.8961191276367267
+            },
+            {
+                "generated_path": "seed0001.png",
+                "similarity": 0.888400811615374
+            }
+        ],
+        "crop_C40_11d688d0-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0949.png",
+                "similarity": 0.8613795947040123
+            },
+            {
+                "generated_path": "seed0447.png",
+                "similarity": 0.8529721002778122
+            }
+        ],
+        "crop_C57_11ad9cf8-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0153.png",
+                "similarity": 0.8839462493714447
+            },
+            {
+                "generated_path": "seed0489.png",
+                "similarity": 0.8797797951029258
+            }
+        ],
+        "crop_C0_3e02863a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0510.png",
+                "similarity": 0.9255121762216343
+            },
+            {
+                "generated_path": "seed0578.png",
+                "similarity": 0.8882534981443927
+            }
+        ],
+        "crop_C4_100d208d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0627.png",
+                "similarity": 0.8844458032223335
+            },
+            {
+                "generated_path": "seed0989.png",
+                "similarity": 0.8805814001717838
+            }
+        ],
+        "crop_C14_3e34c4bc-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0669.png",
+                "similarity": 0.867112711277217
+            },
+            {
+                "generated_path": "seed0745.png",
+                "similarity": 0.8516018825406869
+            }
+        ],
+        "crop_C2_11c9e8f7-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0444.png",
+                "similarity": 0.8540910306643799
+            }
+        ],
+        "crop_C8_1893432b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0298.png",
+                "similarity": 0.878943818362505
+            },
+            {
+                "generated_path": "seed0906.png",
+                "similarity": 0.8782176569787139
+            }
+        ],
+        "crop_C20_16b28010-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0808.png",
+                "similarity": 0.8624946100084866
+            }
+        ],
+        "crop_C12_11ae1741-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0680.png",
+                "similarity": 0.9024162429927385
+            },
+            {
+                "generated_path": "seed0260.png",
+                "similarity": 0.9016372150864381
+            }
+        ],
+        "crop_C4_16bee4e0-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0693.png",
+                "similarity": 0.8884157720015486
+            },
+            {
+                "generated_path": "seed0977.png",
+                "similarity": 0.8683025085864247
+            }
+        ],
+        "crop_C0_0ec3b9a4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0708.png",
+                "similarity": 0.8861007517393648
+            },
+            {
+                "generated_path": "seed0314.png",
+                "similarity": 0.8560777352285273
+            }
+        ],
+        "crop_C45_11a4d1d2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0831.png",
+                "similarity": 0.9403061820221327
+            },
+            {
+                "generated_path": "seed0983.png",
+                "similarity": 0.9373565526566788
+            }
+        ],
+        "crop_C45_11de38d9-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0480.png",
+                "similarity": 0.88154875978187
+            },
+            {
+                "generated_path": "seed0939.png",
+                "similarity": 0.878515243835736
+            }
+        ],
+        "crop_C10_1894bb52-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0687.png",
+                "similarity": 0.8791420234464793
+            }
+        ],
+        "crop_C9_11c9fdcb-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0780.png",
+                "similarity": 0.852351198532405
+            }
+        ],
+        "crop_C13_11c89dd5-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0537.png",
+                "similarity": 0.8937528071020048
+            },
+            {
+                "generated_path": "seed0791.png",
+                "similarity": 0.8893553011468629
+            }
+        ],
+        "crop_C45_11ddcd90-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0979.png",
+                "similarity": 0.8930041022209299
+            },
+            {
+                "generated_path": "seed0772.png",
+                "similarity": 0.8762301142130217
+            }
+        ],
+        "crop_C5_11ad378c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0499.png",
+                "similarity": 0.9067304342970239
+            },
+            {
+                "generated_path": "seed0214.png",
+                "similarity": 0.9010499288019804
+            }
+        ],
+        "crop_C32_3e2c9adc-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0654.png",
+                "similarity": 0.8635807377604423
+            },
+            {
+                "generated_path": "seed0905.png",
+                "similarity": 0.8585098108405613
+            }
+        ],
+        "crop_C39_11c7e3aa-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0815.png",
+                "similarity": 0.8822333607653335
+            },
+            {
+                "generated_path": "seed0739.png",
+                "similarity": 0.876428322746186
+            }
+        ],
+        "crop_C53_11b42045-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0940.png",
+                "similarity": 0.881426030327788
+            },
+            {
+                "generated_path": "seed0137.png",
+                "similarity": 0.8580247932653009
+            }
+        ],
+        "crop_C7_11b30c75-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0794.png",
+                "similarity": 0.8859609108817518
+            },
+            {
+                "generated_path": "seed0760.png",
+                "similarity": 0.8850132345044285
+            }
+        ],
+        "crop_C8_11ada5ca-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0388.png",
+                "similarity": 0.8879533982342176
+            },
+            {
+                "generated_path": "seed0040.png",
+                "similarity": 0.866279992931066
+            }
+        ],
+        "crop_C39_11a5dc94-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0518.png",
+                "similarity": 0.9050933235922154
+            },
+            {
+                "generated_path": "seed0389.png",
+                "similarity": 0.8901841427402871
+            }
+        ],
+        "crop_C26_118e5408-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0716.png",
+                "similarity": 0.8901360197689778
+            },
+            {
+                "generated_path": "seed0591.png",
+                "similarity": 0.8835261118984288
+            }
+        ],
+        "crop_C41_118de24a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0491.png",
+                "similarity": 0.8618781169738406
+            },
+            {
+                "generated_path": "seed0483.png",
+                "similarity": 0.8615486155914662
+            }
+        ],
+        "crop_C19_11ae0e26-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0297.png",
+                "similarity": 0.9090205489560818
+            },
+            {
+                "generated_path": "seed0241.png",
+                "similarity": 0.8890932729832699
+            }
+        ],
+        "crop_C33_118ed7aa-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0402.png",
+                "similarity": 0.9065743049029049
+            },
+            {
+                "generated_path": "seed0348.png",
+                "similarity": 0.894983744131153
+            }
+        ],
+        "crop_C29_11a3a3ad-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0282.png",
+                "similarity": 0.8869959706406677
+            },
+            {
+                "generated_path": "seed0743.png",
+                "similarity": 0.8684887416931338
+            }
+        ],
+        "crop_C48_11baf9c6-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0991.png",
+                "similarity": 0.8893704355746488
+            },
+            {
+                "generated_path": "seed0998.png",
+                "similarity": 0.880809490347948
+            }
+        ],
+        "crop_C1_3e35c8a2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0265.png",
+                "similarity": 0.8867467602576574
+            },
+            {
+                "generated_path": "seed0132.png",
+                "similarity": 0.8597562760758752
+            }
+        ],
+        "crop_C44_11a3a7dc-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0915.png",
+                "similarity": 0.9061483406180227
+            },
+            {
+                "generated_path": "seed0216.png",
+                "similarity": 0.901273372730411
+            }
+        ],
+        "crop_C23_11a9f4c7-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0032.png",
+                "similarity": 0.8798664560515581
+            },
+            {
+                "generated_path": "seed0981.png",
+                "similarity": 0.871270982826156
+            }
+        ],
+        "crop_C25_3e710859-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0118.png",
+                "similarity": 0.9275658893489606
+            },
+            {
+                "generated_path": "seed0102.png",
+                "similarity": 0.8917677878626659
+            }
+        ],
+        "crop_C45_119a6a3e-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0056.png",
+                "similarity": 0.9054925827398732
+            },
+            {
+                "generated_path": "seed0362.png",
+                "similarity": 0.8849487546370612
+            }
+        ],
+        "crop_C58_11be55d9-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0809.png",
+                "similarity": 0.858572427705147
+            },
+            {
+                "generated_path": "seed0595.png",
+                "similarity": 0.856516775597893
+            }
+        ],
+        "crop_C24_100c6607-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0935.png",
+                "similarity": 0.9183584994866185
+            },
+            {
+                "generated_path": "seed0368.png",
+                "similarity": 0.9014524155453808
+            }
+        ],
+        "crop_C59_16a991da-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0665.png",
+                "similarity": 0.899211062419016
+            },
+            {
+                "generated_path": "seed0165.png",
+                "similarity": 0.8906622166277515
+            }
+        ],
+        "crop_C30_16bf82cd-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0194.png",
+                "similarity": 0.8548387848141898
+            }
+        ],
+        "crop_C9_169f9c50-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0288.png",
+                "similarity": 0.9173044284399388
+            },
+            {
+                "generated_path": "seed0734.png",
+                "similarity": 0.8968719166084591
+            }
+        ],
+        "crop_C46_16b9bb27-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0437.png",
+                "similarity": 0.8587716173054224
+            }
+        ],
+        "crop_C20_11c1d923-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0944.png",
+                "similarity": 0.879074318629925
+            },
+            {
+                "generated_path": "seed0393.png",
+                "similarity": 0.868759485894035
+            }
+        ],
+        "crop_C47_3e078a0c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0925.png",
+                "similarity": 0.8621734080564865
+            }
+        ],
+        "crop_C33_11a6ce09-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0646.png",
+                "similarity": 0.8880527451059465
+            },
+            {
+                "generated_path": "seed0205.png",
+                "similarity": 0.8859933061283587
+            }
+        ],
+        "crop_C16_3e0a32b4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0682.png",
+                "similarity": 0.8513495655284724
+            }
+        ],
+        "crop_C48_3e34dde2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0984.png",
+                "similarity": 0.8641178722439194
+            },
+            {
+                "generated_path": "seed0336.png",
+                "similarity": 0.8528267498587818
+            }
+        ],
+        "crop_C33_11b2e1d4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0990.png",
+                "similarity": 0.8742595250226725
+            },
+            {
+                "generated_path": "seed0819.png",
+                "similarity": 0.8676434926441479
+            }
+        ],
+        "crop_C3_11c879c8-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0471.png",
+                "similarity": 0.8749936502977897
+            }
+        ],
+        "crop_C1_3e036f33-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0540.png",
+                "similarity": 0.894876636128596
+            },
+            {
+                "generated_path": "seed0507.png",
+                "similarity": 0.8865050354740495
+            }
+        ],
+        "crop_C45_118c4712-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0017.png",
+                "similarity": 0.8873491728762801
+            },
+            {
+                "generated_path": "seed0711.png",
+                "similarity": 0.8752887506596035
+            }
+        ],
+        "crop_C49_3e2fd4f5-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0063.png",
+                "similarity": 0.8717509612849499
+            },
+            {
+                "generated_path": "seed0494.png",
+                "similarity": 0.8547996439387688
+            }
+        ],
+        "crop_C58_11c8ab92-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0247.png",
+                "similarity": 0.9096599738461879
+            },
+            {
+                "generated_path": "seed0468.png",
+                "similarity": 0.893977194008745
+            }
+        ],
+        "crop_C9_3e026aee-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0914.png",
+                "similarity": 0.8905433315793521
+            },
+            {
+                "generated_path": "seed0124.png",
+                "similarity": 0.8885978995753715
+            }
+        ],
+        "crop_C51_11c87e2d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0398.png",
+                "similarity": 0.862683961527697
+            },
+            {
+                "generated_path": "seed0152.png",
+                "similarity": 0.8595374462316882
+            }
+        ],
+        "crop_C8_0ec3a54d-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0608.png",
+                "similarity": 0.8663212282688072
+            },
+            {
+                "generated_path": "seed0249.png",
+                "similarity": 0.8625643347453238
+            }
+        ],
+        "crop_C10_11a39b2f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0511.png",
+                "similarity": 0.8704634697300075
+            },
+            {
+                "generated_path": "seed0146.png",
+                "similarity": 0.869378360302356
+            }
+        ],
+        "crop_C25_11b411ec-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0189.png",
+                "similarity": 0.9015173701333221
+            }
+        ],
+        "crop_C59_3e746656-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0982.png",
+                "similarity": 0.8852711663199033
+            },
+            {
+                "generated_path": "seed0887.png",
+                "similarity": 0.854788740294866
+            }
+        ],
+        "crop_C16_11b3c20b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0798.png",
+                "similarity": 0.8654858118950347
+            },
+            {
+                "generated_path": "seed0869.png",
+                "similarity": 0.8582053101793723
+            }
+        ],
+        "crop_C14_3e1301ea-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0774.png",
+                "similarity": 0.8612578661263705
+            },
+            {
+                "generated_path": "seed0987.png",
+                "similarity": 0.8604794861414262
+            }
+        ],
+        "crop_C46_118c9465-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0324.png",
+                "similarity": 0.8564306943612652
+            }
+        ],
+        "crop_C18_11c8124f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0658.png",
+                "similarity": 0.8920263530429724
+            },
+            {
+                "generated_path": "seed0382.png",
+                "similarity": 0.8850295795303987
+            }
+        ],
+        "crop_C41_11adbbb3-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0768.png",
+                "similarity": 0.8907167895108385
+            },
+            {
+                "generated_path": "seed0612.png",
+                "similarity": 0.8714349503973664
+            }
+        ],
+        "crop_C0_12da2676-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0053.png",
+                "similarity": 0.8579524962831301
+            }
+        ],
+        "crop_C35_11c8b09c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0430.png",
+                "similarity": 0.8753210660365693
+            },
+            {
+                "generated_path": "seed0246.png",
+                "similarity": 0.8654624394274426
+            }
+        ],
+        "crop_C53_11a6bec6-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0096.png",
+                "similarity": 0.8661299853995947
+            },
+            {
+                "generated_path": "seed0142.png",
+                "similarity": 0.8631674628491558
+            }
+        ],
+        "crop_C55_11ab0766-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0924.png",
+                "similarity": 0.910170201667163
+            },
+            {
+                "generated_path": "seed0837.png",
+                "similarity": 0.8883629656011914
+            }
+        ],
+        "crop_C2_16bff213-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0257.png",
+                "similarity": 0.85229610809654
+            }
+        ],
+        "crop_C40_11b2d8d9-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0407.png",
+                "similarity": 0.8537312817006707
+            }
+        ],
+        "crop_C57_11bbba1b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0755.png",
+                "similarity": 0.8686721724656439
+            },
+            {
+                "generated_path": "seed0345.png",
+                "similarity": 0.8558304994634791
+            }
+        ],
+        "crop_C26_16e48b66-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0190.png",
+                "similarity": 0.8823070605125845
+            },
+            {
+                "generated_path": "seed0927.png",
+                "similarity": 0.854027323783912
+            }
+        ],
+        "crop_C15_11ea71b5-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0186.png",
+                "similarity": 0.8553813034850608
+            }
+        ],
+        "crop_C12_11a576e2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0238.png",
+                "similarity": 0.8640881918587315
+            }
+        ],
+        "crop_C47_100c91c9-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0770.png",
+                "similarity": 0.8703380570609526
+            }
+        ],
+        "crop_C53_11ab59fe-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0076.png",
+                "similarity": 0.8579893447773265
+            },
+            {
+                "generated_path": "seed0638.png",
+                "similarity": 0.8559535454921186
+            }
+        ],
+        "crop_C40_11aa144c-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0062.png",
+                "similarity": 0.8531921791288124
+            }
+        ],
+        "crop_C43_3df7f72a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0910.png",
+                "similarity": 0.8546468973662226
+            }
+        ],
+        "crop_C56_3e74bcdd-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0042.png",
+                "similarity": 0.8811617944985592
+            },
+            {
+                "generated_path": "seed0797.png",
+                "similarity": 0.8787958792825229
+            }
+        ],
+        "crop_C51_11c84119-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0811.png",
+                "similarity": 0.8634423071345138
+            }
+        ],
+        "crop_C12_11c8a4c5-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0052.png",
+                "similarity": 0.8590020452264464
+            },
+            {
+                "generated_path": "seed0166.png",
+                "similarity": 0.8540476647098955
+            }
+        ],
+        "crop_C6_11ad6966-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0346.png",
+                "similarity": 0.8512935720009246
+            }
+        ],
+        "crop_C12_11ecbffe-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0752.png",
+                "similarity": 0.9254456070230942
+            },
+            {
+                "generated_path": "seed0679.png",
+                "similarity": 0.8948664714828712
+            }
+        ],
+        "crop_C40_11a396df-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0334.png",
+                "similarity": 0.8548721617770529
+            },
+            {
+                "generated_path": "seed0083.png",
+                "similarity": 0.8526790140563677
+            }
+        ],
+        "crop_C7_16ba50ca-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0162.png",
+                "similarity": 0.8623608701911604
+            }
+        ],
+        "crop_C55_11a62934-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0676.png",
+                "similarity": 0.8518834883586519
+            }
+        ],
+        "crop_C29_16bfed84-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0551.png",
+                "similarity": 0.8534630511484419
+            }
+        ],
+        "crop_C59_11ddd307-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0580.png",
+                "similarity": 0.8824523686587126
+            },
+            {
+                "generated_path": "seed0866.png",
+                "similarity": 0.8705720363972556
+            }
+        ],
+        "crop_C50_3e3607c2-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0270.png",
+                "similarity": 0.8739005468588272
+            }
+        ],
+        "crop_C8_11aa397a-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0018.png",
+                "similarity": 0.8742615022110336
+            },
+            {
+                "generated_path": "seed0574.png",
+                "similarity": 0.8560841424686343
+            }
+        ],
+        "crop_C0_118d8767-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0331.png",
+                "similarity": 0.8566031152279706
+            }
+        ],
+        "crop_C25_11d663df-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0438.png",
+                "similarity": 0.882272384487228
+            }
+        ],
+        "crop_C56_11ca3273-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0169.png",
+                "similarity": 0.8686145202006358
+            },
+            {
+                "generated_path": "seed0840.png",
+                "similarity": 0.8645947019896986
+            }
+        ],
+        "crop_C28_11abc696-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0980.png",
+                "similarity": 0.8693170731750903
+            },
+            {
+                "generated_path": "seed0364.png",
+                "similarity": 0.8550748763074355
+            }
+        ],
+        "crop_C32_11eac6d6-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0594.png",
+                "similarity": 0.8757985388721271
+            }
+        ],
+        "crop_C18_11c73235-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0644.png",
+                "similarity": 0.8588879129674634
+            }
+        ],
+        "crop_C20_3e04b405-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0215.png",
+                "similarity": 0.8539683532945866
+            }
+        ],
+        "crop_C40_12da5c97-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0508.png",
+                "similarity": 0.8732767631817531
+            }
+        ],
+        "crop_C17_12daba8b-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0041.png",
+                "similarity": 0.8661517836917688
+            }
+        ],
+        "crop_C8_11b2ebea-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0006.png",
+                "similarity": 0.9017237977835811
+            },
+            {
+                "generated_path": "seed0795.png",
+                "similarity": 0.9011264814407627
+            }
+        ],
+        "crop_C45_11abcacc-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0122.png",
+                "similarity": 0.8759286058639479
+            }
+        ],
+        "crop_C19_11eb4379-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0543.png",
+                "similarity": 0.8511529142708528
+            }
+        ],
+        "crop_C29_3e0258a4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0953.png",
+                "similarity": 0.860799166527634
+            },
+            {
+                "generated_path": "seed0361.png",
+                "similarity": 0.854274108882015
+            }
+        ],
+        "crop_C22_11ad9483-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0173.png",
+                "similarity": 0.8605797475792765
+            }
+        ],
+        "crop_C11_3e037802-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0187.png",
+                "similarity": 0.8816555585238804
+            },
+            {
+                "generated_path": "seed0125.png",
+                "similarity": 0.8759970686996387
+            }
+        ],
+        "crop_C58_11afb560-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0375.png",
+                "similarity": 0.8763379395083132
+            }
+        ],
+        "crop_C4_16a99ca4-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0599.png",
+                "similarity": 0.8734033260530059
+            },
+            {
+                "generated_path": "seed0309.png",
+                "similarity": 0.8541442365615629
+            }
+        ],
+        "crop_C30_3e0a0b81-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0587.png",
+                "similarity": 0.9108388312738298
+            }
+        ],
+        "crop_C15_3e073ff9-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0175.png",
+                "similarity": 0.895113681736265
+            },
+            {
+                "generated_path": "seed0121.png",
+                "similarity": 0.8562920751598848
+            }
+        ],
+        "crop_C16_100c9e91-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0413.png",
+                "similarity": 0.8627017488355594
+            }
+        ],
+        "crop_C25_11de584f-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0295.png",
+                "similarity": 0.8616358029785492
+            }
+        ],
+        "crop_C13_11de3d05-60a5-11ec-8402-0a7404972c70.jpg": [
+            {
+                "generated_path": "seed0534.png",
+                "similarity": 0.8565944174525904
+            },
+            {
+                "generated_path": "seed0656.png",
+                "similarity": 0.8533266555113611
+            }
+        ]
+    },
+    "unmatched_originals": [
+        "crop_C15_11aaf9f2-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C18_3e360464-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C43_16aabaf7-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C47_11de4133-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C2_118f1d3c-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C54_11a993d1-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C10_118c6c60-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C42_3e3790f3-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C22_11de13e0-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C39_11baf108-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C4_3e03a0b7-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C6_11a4c029-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C54_118d1e4c-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C29_3e0a35a7-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C47_12131410-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C22_1212e960-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C59_0ec3b0e7-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C57_16d8c87b-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C35_16c002d1-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C58_11ddf9e3-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C28_16a716b8-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C4_3e0233eb-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C10_11b023cf-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C28_3e030855-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C20_100b5eed-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C16_11b3a0e4-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C53_11ca36b3-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C40_3e3666f2-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C51_12da215b-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C43_16a982eb-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C49_11ac57ef-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C34_11a4c869-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C35_3e0a1df5-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C46_11a523ca-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C3_11c9edec-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C2_118d5edc-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C17_11a64b83-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C36_1893d41e-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C32_3e0a4025-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C57_11de180d-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C34_3e028063-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C35_11a5cc03-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C29_0ec39ce2-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C44_11a4bbd7-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C48_3e078d1f-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C10_11b031f6-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C38_118c9017-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C42_3e0a3d23-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C27_118c175b-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C5_3e2d0880-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C32_118c6803-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C12_118c8787-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C56_16b67fd5-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C57_3e7405b1-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C20_1894aeed-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C14_100c53aa-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C9_11de2081-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C39_11c711fe-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C11_100d7c9d-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C54_11a332d7-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C46_3e361a82-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C22_11de467d-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C34_3e07994b-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C35_3e3028a5-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C32_16aadc2d-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C32_3e768249-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C57_11ca149e-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C51_11d31c4e-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C39_118c2fb4-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C23_16a05eba-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C28_11aaab72-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C19_3e04f7fd-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C28_100c7ca5-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C20_11eac26d-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C32_11a6d89c-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C20_16a1c400-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C45_12da1cf1-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C6_100c75e8-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C24_16af1f81-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C51_11bbefae-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C21_3e35fe5d-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C0_119a38fd-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C43_118d79a8-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C26_11ca29f7-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C38_0ec3a251-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C31_16a987c3-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C13_119866b6-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C39_16bfda67-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C4_11b3bdb8-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C32_11de2daa-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C53_11abecdf-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C49_118c7a32-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C48_118e25d4-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C0_3e0553b5-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C12_3e027a08-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C33_100c982a-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C12_1194f677-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C12_11a4b1f7-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C15_11eb68b3-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C31_3e04ae1e-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C9_16a75b01-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C34_3e0783ed-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C49_11de2975-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C59_16c63dff-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C17_11a4f657-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C18_11eacb2e-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C13_11b3dde8-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C7_100cd735-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C15_18931286-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C33_100c59fe-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C40_11ea9fa5-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C19_11aac62e-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C30_118db4a1-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C29_3e023cbc-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C50_3e368559-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C45_118df88e-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C30_118c75d9-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C36_118e330f-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C40_3e047777-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C31_118d82b4-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C0_3e130b2c-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C47_16a1bf4b-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C27_16a1707e-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C56_11b39213-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C37_11a6b217-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C57_1194b953-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C54_118c82f9-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C2_11ddf5be-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C35_11aba73b-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C28_16bfad11-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C4_11eb47b4-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C4_11a4e5df-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C13_11ac498f-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C16_16bfdee0-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C56_11de4aed-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C59_3e039a69-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C44_11c9e4a2-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C29_1194ed96-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C7_16b270d7-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C39_11ea6d69-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C46_3e033728-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C1_119a34aa-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C2_11a48dc8-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C10_118e2a4b-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C3_118c63a4-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C3_11940e2e-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C25_11b40958-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C33_11ddc91f-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C30_11a99d71-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C18_100ca520-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C57_11ae12e6-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C35_11c231fa-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C37_16bed698-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C47_3e0a0e6f-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C23_11c7d1b7-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C1_11c1ef41-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C19_16ba560c-60a5-11ec-8402-0a7404972c70.jpg",
+        "crop_C51_11a99926-60a5-11ec-8402-0a7404972c70.jpg"
+    ],
+    "unmatched_generated": [
+        "seed0054.png",
+        "seed0138.png",
+        "seed0439.png",
+        "seed0557.png",
+        "seed0403.png",
+        "seed0926.png",
+        "seed0701.png",
+        "seed0431.png",
+        "seed0611.png",
+        "seed0174.png",
+        "seed0251.png",
+        "seed0220.png",
+        "seed0576.png",
+        "seed0526.png",
+        "seed0715.png",
+        "seed0663.png",
+        "seed0677.png",
+        "seed0731.png",
+        "seed0619.png",
+        "seed0719.png",
+        "seed0877.png",
+        "seed0252.png",
+        "seed0409.png",
+        "seed0240.png",
+        "seed0829.png",
+        "seed0908.png",
+        "seed0423.png",
+        "seed0688.png",
+        "seed0934.png",
+        "seed0422.png",
+        "seed0391.png",
+        "seed0860.png"
+    ]
+}
