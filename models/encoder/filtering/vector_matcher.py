@@ -1,15 +1,29 @@
+from dataclasses import dataclass
+from typing import Dict, List, Tuple, Set, NamedTuple
 import numpy as np
-from typing import Dict, List, Tuple, Set
 import os
 import json
 from scipy.spatial.distance import cosine
+
+@dataclass
+class MatchingResult:
+    """매칭 결과를 담는 데이터 클래스"""
+    # 매칭 성공한 결과들: {원본경로: [(생성이미지경로, 유사도), ...]}
+    matched_pairs: Dict[str, List[Tuple[str, float]]]
+    
+    # 매칭되지 않은 이미지들
+    unmatched_originals: Set[str]  # 매칭되지 않은 원본 이미지들
+    unmatched_generated: Set[str]  # 매칭되지 않은 생성 이미지들
+    
+    # 매칭 통계
+    statistics: Dict[str, float]
 
 class VectorMatcher:
     def __init__(self, 
                  origin_vector_path: str,
                  generated_vector_path: str,
                  k: int = 2,
-                 similarity_threshold: float = 0.7):  # 유사도 스레시홀드 추가
+                 similarity_threshold: float = 0.7):
         """
         Args:
             origin_vector_path: 원본 이미지 벡터 경로 (.npy)
@@ -29,11 +43,10 @@ class VectorMatcher:
         """두 벡터 간의 코사인 유사도 계산"""
         return 1 - cosine(vec1, vec2)
 
-    def match_vectors(self, save_dir: str) -> Tuple[Dict[str, List[Tuple[str, float]]], Set[str]]:
+    def find_matches(self) -> MatchingResult:
         """벡터 매칭 실행"""
-        os.makedirs(save_dir, exist_ok=True)
         results = {}
-        matched_generated = set()  # 이미 매칭된 생성 이미지 추적
+        matched_generated = set()
         
         # 각 원본 이미지에 대해
         for i, (orig_path, orig_vector) in enumerate(self.origin_vectors.items(), 1):
@@ -58,21 +71,58 @@ class VectorMatcher:
                 for gen_path, _ in top_k_matches:
                     matched_generated.add(gen_path)
         
-        # 매칭되지 않은 생성 이미지 찾기
+        # 매칭되지 않은 이미지들 찾기
+        unmatched_originals = set(self.origin_vectors.keys()) - set(results.keys())
         unmatched_generated = set(self.generated_vectors.keys()) - matched_generated
+        
+        # 통계 계산
+        stats = self._calculate_statistics(results, unmatched_originals, unmatched_generated)
         
         print("\nMatching completed!")
         
-        # 결과 저장
-        self.save_results(results, unmatched_generated, save_dir)
+        # MatchingResult 객체 생성 및 반환
+        matching_result = MatchingResult(
+            matched_pairs=results,
+            unmatched_originals=unmatched_originals,
+            unmatched_generated=unmatched_generated,
+            statistics=stats
+        )
         
-        return results, unmatched_generated
+        return matching_result
 
-    def save_results(self, 
-                    results: Dict[str, List[Tuple[str, float]]], 
-                    unmatched: Set[str],
-                    save_dir: str):
+    def _calculate_statistics(self, 
+                            results: Dict[str, List[Tuple[str, float]]], 
+                            unmatched_originals: Set[str],
+                            unmatched_generated: Set[str]) -> Dict[str, float]:
+        """매칭 통계 계산"""
+        all_similarities = [sim for matches in results.values() 
+                          for _, sim in matches]
+        matched_generated = set(gen_path for matches in results.values() 
+                              for gen_path, _ in matches)
+        
+        stats = {
+            'total_originals': len(self.origin_vectors),
+            'matched_originals': len(results),
+            'unmatched_originals': len(unmatched_originals),
+            'total_generated': len(self.generated_vectors),
+            'matched_generated': len(matched_generated),
+            'unmatched_generated': len(unmatched_generated),
+        }
+        
+        if all_similarities:
+            stats.update({
+                'average_similarity': float(np.mean(all_similarities)),
+                'min_similarity': float(min(all_similarities)),
+                'max_similarity': float(max(all_similarities)),
+                'std_similarity': float(np.std(all_similarities))
+            })
+        
+        return stats
+
+    def save_results(self, result: MatchingResult, save_dir: str):
         """매칭 결과 저장"""
+        os.makedirs(save_dir, exist_ok=True)
+        
         # 1. 텍스트 형식
         with open(os.path.join(save_dir, 'matching_results.txt'), 'w') as f:
             f.write(f"Matching Results (Similarity Threshold: {self.similarity_threshold})\n")
@@ -81,24 +131,23 @@ class VectorMatcher:
             # 매칭된 결과
             f.write("Matched Results\n")
             f.write("-" * 50 + "\n\n")
-            for orig_path, matches in results.items():
+            for orig_path, matches in result.matched_pairs.items():
                 f.write(f"Original: {orig_path}\n")
                 for gen_path, similarity in matches:
                     f.write(f"→ Generated: {gen_path} (similarity: {similarity:.4f})\n")
                 f.write("\n")
             
             # 매칭되지 않은 원본 이미지
-            unmatched_originals = set(self.origin_vectors.keys()) - set(results.keys())
-            if unmatched_originals:
+            if result.unmatched_originals:
                 f.write("\nUnmatched Original Images (No matches above threshold)\n")
                 f.write("-" * 50 + "\n")
-                for orig_path in sorted(unmatched_originals):
+                for orig_path in sorted(result.unmatched_originals):
                     f.write(f"• {orig_path}\n")
             
             # 매칭되지 않은 생성 이미지
             f.write("\nUnmatched Generated Images\n")
             f.write("-" * 50 + "\n")
-            for gen_path in sorted(unmatched):
+            for gen_path in sorted(result.unmatched_generated):
                 f.write(f"• {gen_path}\n")
         
         # 2. JSON 형식
@@ -109,58 +158,29 @@ class VectorMatcher:
                     {"generated_path": gen_path, "similarity": float(sim)}
                     for gen_path, sim in matches
                 ]
-                for orig_path, matches in results.items()
+                for orig_path, matches in result.matched_pairs.items()
             },
-            "unmatched_originals": list(set(self.origin_vectors.keys()) - set(results.keys())),
-            "unmatched_generated": list(unmatched)
+            "unmatched_originals": list(result.unmatched_originals),
+            "unmatched_generated": list(result.unmatched_generated),
+            "statistics": result.statistics
         }
         
         with open(os.path.join(save_dir, 'matching_results.json'), 'w') as f:
             json.dump(json_results, f, indent=4)
         
         # 3. 매칭 통계 저장
-        stats = self.get_matching_stats(results, unmatched)
         with open(os.path.join(save_dir, 'matching_stats.txt'), 'w') as f:
             f.write(f"Matching Statistics (Similarity Threshold: {self.similarity_threshold})\n")
             f.write("=" * 50 + "\n\n")
-            for stat_name, stat_value in stats.items():
+            for stat_name, stat_value in result.statistics.items():
                 f.write(f"{stat_name}: {stat_value}\n")
-
-    def get_matching_stats(self, 
-                          results: Dict[str, List[Tuple[str, float]]], 
-                          unmatched: Set[str]) -> Dict:
-        """매칭 통계 계산"""
-        all_similarities = [sim for matches in results.values() 
-                          for _, sim in matches]
-        matched_generated = set(gen_path for matches in results.values() 
-                              for gen_path, _ in matches)
-        unmatched_originals = set(self.origin_vectors.keys()) - set(results.keys())
-        
-        stats = {
-            'total_originals': len(self.origin_vectors),
-            'matched_originals': len(results),
-            'unmatched_originals': len(unmatched_originals),
-            'total_generated': len(self.generated_vectors),
-            'matched_generated': len(matched_generated),
-            'unmatched_generated': len(unmatched),
-        }
-        
-        if all_similarities:  # 매칭된 결과가 있는 경우만 유사도 통계 추가
-            stats.update({
-                'average_similarity': f"{np.mean(all_similarities):.4f}",
-                'min_similarity': f"{min(all_similarities):.4f}",
-                'max_similarity': f"{max(all_similarities):.4f}",
-                'std_similarity': f"{np.std(all_similarities):.4f}"
-            })
-        
-        return stats
 
 
 if __name__ == "__main__":
     # 경로 설정
     origin_vector_path = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/vectors/origin.npy"
     generated_vector_path = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/vectors/generated.npy"
-    save_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/test/vector_match_test"
+    save_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/test/vector_match_test2"
 
     # 매칭 실행
     matcher = VectorMatcher(
@@ -170,4 +190,5 @@ if __name__ == "__main__":
         similarity_threshold=0.85 
     )
     
-    results, unmatched = matcher.match_vectors(save_dir=save_dir)
+    result = matcher.find_matches()  # 매칭 수행
+    matcher.save_results(result, save_dir)  # 결과 저장
