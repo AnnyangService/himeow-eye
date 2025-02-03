@@ -71,7 +71,7 @@ class TestSamEncoder:
             plt.axis('off')
             
             plt.tight_layout()
-            plt.savefig('/home/minelab/바탕화면/ANN/himeow/assets/encoder_test_result/test_result_featuremap_avg_1.png')
+            plt.savefig('/home/minelab/desktop/ANN/jojun/himeow-eye/test/encoder_test/featuremaps/before_fintuning/channels_avg.png')
             plt.close()
             
             # 2. 여러 채널들 시각화 (예: 처음 64개 채널)
@@ -87,7 +87,7 @@ class TestSamEncoder:
                 plt.axis('off')
             
             plt.tight_layout()
-            plt.savefig('/home/minelab/바탕화면/ANN/himeow/assets/encoder_test_result/test_result_featuremap_channels_1.png')
+            plt.savefig('/home/minelab/desktop/ANN/jojun/himeow-eye/test/encoder_test/featuremaps/before_fintuning/channels.png')
             plt.close()
             
             
@@ -97,6 +97,6 @@ if __name__ == "__main__":
     # GPU 설정 및 모델 로드
     encoder = TestSamEncoder(gpu_id=3)
     
-    outputs = encoder.process_image("/home/minelab/바탕화면/ANN/himeow/assets/encoder_test_dataset/origin1.jpg")
+    outputs = encoder.process_image("/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases/crop_C0_0ec37892-60a5-11ec-8402-0a7404972c70.jpg")
     print("Encoder output shape:", outputs.last_hidden_state.shape)
     
