@@ -9,6 +9,7 @@ models/encoder/finetuning/yolo/custom_models
 models/encoder/finetuning/custom_models
 
 #Taehwa
+output
 agumented_dataset
 *.pt
 unet

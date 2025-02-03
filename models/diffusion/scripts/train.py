@@ -2,6 +2,8 @@ from diffusers import DDPMPipeline  # 누락된 DDPMPipeline 임포트
 from accelerate import Accelerator
 from scripts.evaluate import evaluate
 from tqdm.auto import tqdm
+from scripts.config import config
+
 
 import os
 import torch
@@ -10,17 +12,17 @@ import torch.nn.functional as F  # F를 torch.nn.functional로 임포트
 
 def train_loop(config, model, noise_scheduler, optimizer, train_dataloader, lr_scheduler):
     
-    project_dir = os.path.join(config.output_dir, "logs") 
-    os.makedirs(project_dir, exist_ok=True)  # logs 프로젝트 디렉토리 생성
-    
+    log_project_dir = os.path.join(config.output_dir, "logs") 
+    os.makedirs(log_project_dir, exist_ok=True)  # logs 프로젝트 디렉토리 생성
+    #print(project_dir)
     #accelerator 초기화
     accelerator = Accelerator(
         mixed_precision=config.mixed_precision,
         gradient_accumulation_steps=config.gradient_accumulation_steps, 
         log_with="tensorboard",
-        project_dir="project_dir",
+        project_dir=log_project_dir,
     )
-    
+
     #분산학습환경에 맞게 acceleraotr을 준비 - 여러 GPU에서 병렬 처리 가능
     model, optimizer, train_dataloader, lr_scheduler = accelerator.prepare(
         model, optimizer, train_dataloader, lr_scheduler
@@ -97,9 +99,8 @@ def train_loop(config, model, noise_scheduler, optimizer, train_dataloader, lr_s
 
         if accelerator.is_main_process:
             pipeline = DDPMPipeline(unet=accelerator.unwrap_model(model), scheduler=noise_scheduler)
-            #accelerator = Accelerator()
             if (epoch + 1) % config.save_image_epochs == 0 or epoch == config.num_epochs - 1:
                 evaluate(config, epoch, pipeline)
 
             if (epoch + 1) % config.save_model_epochs == 0 or epoch == config.num_epochs - 1:
-                pipeline.save_pretrained(config.model_save_dir)
+                pipeline.save_pretrained(config.model_save_dir) 

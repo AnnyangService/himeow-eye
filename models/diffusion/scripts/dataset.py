@@ -17,10 +17,12 @@ preprocess = transforms.Compose(
         transforms.Resize((config.image_size, config.image_size)),
         transforms.RandomHorizontalFlip(),
 #       transforms.RandomRotation(degrees=30), # 이미지를 -30도에서 30도 사이로 회전
-        transforms.RandomVerticalFlip(p=0.3), # 이미지를 상하로 뒤집는 작업, 확률은 0.3
+        transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.1),  # 밝기/대비 조정
+
+        transforms.RandomVerticalFlip(), # 이미지를 상하로 뒤집는 작업
 
         transforms.ToTensor(),
-        transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5]),
+        transforms.Normalize([0.5], [0.5]),
     ]
 )
 

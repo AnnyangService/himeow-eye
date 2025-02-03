@@ -15,7 +15,11 @@ if __name__ == "__main__":
     #Scheduler 초기화
     noise_scheduler = DDPMScheduler(num_train_timesteps=config.num_train_timesteps) #Scheduler 세팅팅
     #optimizer 초기화 #Standard AdamW Optimzier 사용    
-    optimizer = optim.AdamW(model.parameters(), lr=config.learning_rate) #Standard AdamW Optimzier 사용
+    optimizer = optim.AdamW(
+        model.parameters(), 
+        lr=config.learning_rate,
+        
+        ) #Standard AdamW Optimzier 사용
     
     #Cosine learning rate schedule  사용, 학습률(lr)을 훈련 과정에서 점진적으로 조정
     lr_scheduler = get_cosine_schedule_with_warmup(

@@ -20,8 +20,8 @@ class TrainingConfig:
 
     mixed_precision = "fp16"  # `no`는 float32, 자동 혼합 정밀도를 위한 `fp16`
     
-    output_dir = "/home/minelab/desktop/ANN/Taehwa2/himeow-eye/models/diffusion/output/"  # 로컬 및 HF Hub에 저장되는 모델명
-    model_save_dir = "/home/minelab/desktop/ANN/Taehwa2/himeow-eye/models/diffusion/output/model"
+    output_dir = "/home/minelab/desktop/ANN/Taehwa2/himeow-eye/models/diffusion/output/"  # sample 이미지 저장 경로
+    model_save_dir = "/home/minelab/desktop/ANN/Taehwa2/himeow-eye/models/diffusion/output/model" #모델 관련 저장경로
     
     seed = 0 # evaluate.py에서 사용
     
