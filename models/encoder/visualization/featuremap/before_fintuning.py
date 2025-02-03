@@ -87,7 +87,7 @@ class TestSamEncoder:
                 plt.axis('off')
             
             plt.tight_layout()
-            plt.savefig('/home/minelab/desktop/ANN/jojun/himeow-eye/test/encoder_test/featuremaps/before_fintuning/channels.png')
+            plt.savefig('/home/minelab/desktop/ANN/jojun/himeow-eye/test/encoder/featuremaps/before_fintuning/channels.png')
             plt.close()
             
             
@@ -96,7 +96,6 @@ class TestSamEncoder:
 if __name__ == "__main__":
     # GPU 설정 및 모델 로드
     encoder = TestSamEncoder(gpu_id=3)
-    
-    outputs = encoder.process_image("/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases/crop_C0_0ec37892-60a5-11ec-8402-0a7404972c70.jpg")
+    outputs = encoder.process_image("/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/keratitis/crop_C52_11a46ded-60a5-11ec-8402-0a7404972c70.jpg")
     print("Encoder output shape:", outputs.last_hidden_state.shape)
     

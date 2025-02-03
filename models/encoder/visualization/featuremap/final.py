@@ -118,7 +118,7 @@ if __name__ == "__main__":
     }
     
     # 파일 경로 설정
-    image_path = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases/crop_C0_0ec37892-60a5-11ec-8402-0a7404972c70.jpg"  # 처리할 이미지 파일 경로
+    image_path = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/keratitis/crop_C52_11a46ded-60a5-11ec-8402-0a7404972c70.jpg"  # 처리할 이미지 파일 경로
     save_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/test/encoder_test/featuremaps/final"
     
     # 시각화 실행

@@ -57,7 +57,7 @@ if __name__ == "__main__":
     # 설정
     checkpoint_path = "/home/minelab/desktop/ANN/jojun/himeow-eye/models/encoder/finetuning/custom_models/best_checkpoint.pth"
     save_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/test/encoder_test/featuremaps/before_channel_selection"
-    test_image = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases/crop_C0_0ec37892-60a5-11ec-8402-0a7404972c70.jpg"
+    test_image = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/keratitis/crop_C52_11a46ded-60a5-11ec-8402-0a7404972c70.jpg"
     
     # 특징 추출
     encoder = CustomSamEncoder(checkpoint_path=checkpoint_path, gpu_id=3)
