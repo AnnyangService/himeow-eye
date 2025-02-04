@@ -1,6 +1,6 @@
 import os
 import shutil
-from vector_matcher import VectorMatcher
+from .vector_matcher import VectorMatcher
 
 def filter_images(
     generated_dir: str,
