@@ -52,16 +52,15 @@ def visualize_features(image_path: str, save_dir: str, **kwargs):
         plt.savefig(os.path.join(img_save_dir, 'original.png'))
         plt.close()
         
-        # 2. 선택된 top k 채널 시각화
-        plt.figure(figsize=(25, 20))
-        for idx, channel_idx in enumerate(top_channels[:30]):
-            plt.subplot(5, 6, idx + 1)
+        # 2. 선택된 top 20 채널 시각화 (가로 5, 세로 4)
+        plt.figure(figsize=(20, 16))  # 비율을 5:4로 조정
+        for idx, channel_idx in enumerate(top_channels[:20]):
+            plt.subplot(4, 5, idx + 1)  # 4행 5열로 변경
             channel_features = features[0, channel_idx].cpu().numpy()
             plt.imshow(channel_features, cmap='viridis')
-            plt.title(f'Channel {channel_idx}\nScore: {scores[channel_idx]:.4f}')
             plt.axis('off')
         
-        plt.tight_layout()
+        plt.subplots_adjust(wspace=0.1, hspace=0.1)  # 간격 조정
         plt.savefig(os.path.join(img_save_dir, 'selected_channels.png'))
         plt.close()
         
@@ -118,8 +117,8 @@ if __name__ == "__main__":
     }
     
     # 파일 경로 설정
-    image_path = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/keratitis/crop_C52_11a46ded-60a5-11ec-8402-0a7404972c70.jpg"  # 처리할 이미지 파일 경로
-    save_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/test/encoder_test/featuremaps/final"
+    image_path = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/keratitis/crop_C57_100c9b60-60a5-11ec-8402-0a7404972c70.jpg"
+    save_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/test/encoder/featuremaps/final"
     
     # 시각화 실행
     visualize_features(

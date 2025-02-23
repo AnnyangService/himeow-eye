@@ -50,7 +50,7 @@ class ChannelSelector:
             # b. Edge detection score
             grad_x = np.gradient(channel, axis=1)
             grad_y = np.gradient(channel, axis=0)
-            edge_score = np.mean(np.sqrt(grad_x**2 + grad_y**2))
+            edge_score = np.mean(np.sqrt(grad_x**2 + grad_y**2))    
             
             # 최종 점수 계산
             final_score = (

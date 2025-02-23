@@ -46,7 +46,6 @@ def visualize_features(features: torch.Tensor, original_image: Image.Image, save
     for i in range(num_channels):
         plt.subplot(rows, cols, i + 1)
         plt.imshow(features[0, i].numpy(), cmap='viridis')
-        plt.title(f'Channel {i}')
         plt.axis('off')
     
     plt.tight_layout()
@@ -56,8 +55,8 @@ def visualize_features(features: torch.Tensor, original_image: Image.Image, save
 if __name__ == "__main__":
     # 설정
     checkpoint_path = "/home/minelab/desktop/ANN/jojun/himeow-eye/models/encoder/finetuning/custom_models/best_checkpoint.pth"
-    save_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/test/encoder_test/featuremaps/before_channel_selection"
-    test_image = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/keratitis/crop_C52_11a46ded-60a5-11ec-8402-0a7404972c70.jpg"
+    save_dir = "/home/minelab/desktop/ANN/jojun/himeow-eye/test/encoder/featuremaps/before_channel_selection"
+    test_image = "/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/keratitis/crop_C57_100c9b60-60a5-11ec-8402-0a7404972c70.jpg"
     
     # 특징 추출
     encoder = CustomSamEncoder(checkpoint_path=checkpoint_path, gpu_id=3)

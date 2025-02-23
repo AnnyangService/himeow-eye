@@ -43,50 +43,27 @@ def convert_masks_to_tiff(input_dir, output_dir):
         # TIFF로 저장
         pil_mask.save(output_path)
 
-def visualize_mask(image_path, mask_path, save_path=None):
-    """마스크 시각화 함수"""
-    # 원본 이미지와 마스크 로드
-    img = cv2.imread(image_path)
-    img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-    
-    # 원본 이미지 resize (256x256)
-    img_rgb = cv2.resize(img_rgb, (256, 256))
-    
-    # 마스크 로드 
-    mask = np.array(Image.open(mask_path))
-    
-    # 시각화
-    fig, ax = plt.subplots(figsize=(8, 8))
-    
-    # 원본 이미지 표시
-    ax.imshow(img_rgb)
-    
-    # 마스크에 파란색 반투명 효과 적용
-    mask_bool = mask > 0
-    overlay = np.zeros((*mask.shape, 4))
-    overlay[mask_bool] = [0.0, 0.0, 1.0, 0.4]  # 파란색, 알파값 0.4
-    
-    ax.imshow(overlay)
-    ax.set_title("Ground truth mask")
-    ax.axis("off")
-    
-    # 시각화 결과 저장
-    if save_path:
-        plt.savefig(save_path, bbox_inches='tight', pad_inches=0)
-    plt.show()
-    
+def visualize_binary_mask(mask_path, save_path=None):
+   """Binary mask만 시각화하고 저장하는 함수"""
+   # Binary mask 로드
+   mask = np.array(Image.open(mask_path))
+   
+   # 이미지 생성
+   plt.figure(figsize=(5, 5))
+   plt.imshow(mask, cmap='gray')
+   plt.axis("off")
+   
+   # 여백 제거
+   plt.gca().set_position([0, 0, 1, 1])
+   
+   # 결과 저장
+   if save_path:
+       plt.savefig(save_path, bbox_inches='tight', pad_inches=0)
+       
+   plt.close()
 
+# 시각화 실행
+mask_path = '/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases_gtmasks/tiff_masks/crop_C0_3e0adbae-60a5-11ec-8402-0a7404972c70.tiff'
+visualization_path = '/home/minelab/desktop/ANN/visualization.png'
 
-# 경로 설정
-input_dir = '/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases_gtmasks/good_predictions'
-output_dir = '/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases_gtmasks/tiff_masks'
-
-# 마스크 변환
-convert_masks_to_tiff(input_dir, output_dir)
-
-
-# # 변환된 결과 시각화
-# image_path = '/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases_gtmasks/good_predictions/crop_C0_0ec2d16c-60a5-11ec-8402-0a7404972c70.jpg'
-# mask_path = '/home/minelab/desktop/ANN/jojun/himeow-eye/datasets/other_diseases_gtmasks/tiff_masks/crop_C0_0ec2d16c-60a5-11ec-8402-0a7404972c70.tiff'
-# visualization_path = '/home/minelab/desktop/ANN/visualization.png'
-# visualize_mask(image_path, mask_path, visualization_path)
+visualize_binary_mask(mask_path, visualization_path)
